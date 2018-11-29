@@ -1,4 +1,4 @@
-package lc.client.render.fabs.blocks;
+package SGE.client.render.fabs.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
@@ -12,10 +12,10 @@ import lc.common.configuration.xml.ComponentConfig;
 /**
  * Obelisk block renderer implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class BlockObeliskRenderer extends LCBlockRenderer {
+public class BlockObeliskRenderer extends SGEBlockRenderer {
 
 	@Override
 	public void configure(ComponentConfig c) {
