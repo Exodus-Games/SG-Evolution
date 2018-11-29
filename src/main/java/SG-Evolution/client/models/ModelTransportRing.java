@@ -1,8 +1,8 @@
 package SGE.client.models;
 
 import SGE.client.models.loader.WavefrontModel;
-import lc.common.LCLog;
-import lc.common.resource.ResourceAccess;
+import SGE.common.LCLog;
+import SGE.common.resource.ResourceAccess;
 
 public class ModelTransportRing extends WavefrontModel {
 
