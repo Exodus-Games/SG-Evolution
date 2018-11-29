@@ -2,12 +2,12 @@ package SGE.blocks;
 
 import java.util.List;
 
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockDecorative;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.common.base.LCBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockDecorative;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
