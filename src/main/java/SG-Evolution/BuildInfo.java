@@ -11,13 +11,13 @@ import lc.common.resource.ResourceAccess;
  * This file is automatically updated by Jenkins as part of the CI build script
  * in Gradle. Don't put any pre-set values here.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  */
 public class BuildInfo implements IModInfo {
 	/** Mod name */
-	public static final String modName = "LanteaCraft";
+	public static final String modName = "SG Evolution";
 	/** Mod ID */
-	public static final String modID = "LanteaCraft";
+	public static final String modID = "SG Evolution";
 
 	/** Mod certificate value */
 	public static final String CERT = "".replace(":", "");
@@ -28,7 +28,7 @@ public class BuildInfo implements IModInfo {
 	public static final String buildNumber = "@BUILD@";
 
 	/** The base path for all API requests */
-	public static final String webAPI = "http://lanteacraft.com/api/";
+	public static final String webAPI = "http://Exodus-Games.com/api/";
 
 	/** Info instance */
 	public static final BuildInfo $;

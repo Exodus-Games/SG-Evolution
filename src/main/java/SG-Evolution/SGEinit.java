@@ -55,10 +55,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 /**
  * Registration initializer
  *
- * @author AfterLifeLochie
+ * @author Esodus Games
  *
  */
-public class LCInit {
+public class SGE-init {
 
 	/**
 	 * Called during pre-initialization
@@ -68,7 +68,7 @@ public class LCInit {
 	 * @param event
 	 *            The original FML event
 	 */
-	public void preinit(LCRuntime runtime, FMLPreInitializationEvent event) {
+	public void preinit(SGERuntime runtime, FMLPreInitializationEvent event) {
 		// TODO: Auto-generated method stub
 	}
 
@@ -80,7 +80,7 @@ public class LCInit {
 	 * @param event
 	 *            The original FML event
 	 */
-	public void init(LCRuntime runtime, FMLInitializationEvent event) {
+	public void init(SGERuntime runtime, FMLInitializationEvent event) {
 		Blocks blocks = runtime.blocks();
 		Items items = runtime.items();
 		Entities entities = runtime.entities();
@@ -169,7 +169,7 @@ public class LCInit {
 
 	}
 
-	private void initOreRecipes(LCRuntime runtime, Recipes recipes, Blocks blocks, Items items) {
+	private void initOreRecipes(SGERuntime runtime, Recipes recipes, Blocks blocks, Items items) {
 		IDefinitionReference naquadah = items.lanteaOreItem.ref().pushAll(1, OreType.NAQUADAH.ordinal());
 		IDefinitionReference trinium = items.lanteaOreItem.ref().pushAll(1, OreType.TRINIUM.ordinal());
 		IDefinitionReference triniumIngot = new DefinitionReference(items.lanteaAlloyItem, 1, OreType.TRINIUM.ordinal());
@@ -204,7 +204,7 @@ public class LCInit {
 		runtime.registries().recipes().addRecipe(recipes.triniumAlloyToIngots);
 	}
 
-	private void initCrystalRecipes(LCRuntime runtime, Recipes recipes, Blocks blocks, Items items) {
+	private void initCrystalRecipes(SGERuntime runtime, Recipes recipes, Blocks blocks, Items items) {
 		ItemStack diamond = new ItemStack(net.minecraft.init.Items.diamond, 1);
 		ItemStack lapis = new ItemStack(net.minecraft.init.Items.dye, 1, 4);
 		ItemStack glassPane = new ItemStack(net.minecraft.init.Blocks.glass_pane, 1);
@@ -230,7 +230,7 @@ public class LCInit {
 		runtime.registries().recipes().addRecipe(recipes.crystalControlRecipe);
 	}
 
-	private void initStargateRecipes(LCRuntime runtime, Recipes recipes, Blocks blocks, Items items) {
+	private void initStargateRecipes(SGERuntime runtime, Recipes recipes, Blocks blocks, Items items) {
 		IDefinitionReference ringBlock = blocks.stargateRingBlock.ref();
 		IDefinitionReference chevronBlock = blocks.stargateRingBlock.ref().pushAll(1, 1);
 		IDefinitionReference baseBlock = blocks.stargateBaseBlock.ref();
@@ -264,7 +264,7 @@ public class LCInit {
 		runtime.registries().recipes().addRecipe(recipes.frame);
 	}
 
-	private void initDecorRecipes(LCRuntime runtime, Recipes recipes, Blocks blocks, Items items) {
+	private void initDecorRecipes(SGERuntime runtime, Recipes recipes, Blocks blocks, Items items) {
 		IDefinitionReference decorator = items.lanteaDecoratorTool.ref();
 		IDefinitionReference decorLantSteel = blocks.lanteaDecorBlock.ref().pushAll(1, DecorBlockTypes.LantSteel.idx);
 		IDefinitionReference decorLantDecSteel = blocks.lanteaDecorBlock.ref().pushAll(1,
@@ -319,7 +319,7 @@ public class LCInit {
 	 * @param event
 	 *            The original FML event
 	 */
-	public void postinit(LCRuntime runtime, FMLPostInitializationEvent event) {
+	public void postinit(SGERuntime runtime, FMLPostInitializationEvent event) {
 		// TODO: Auto-generated method stub
 	}
 

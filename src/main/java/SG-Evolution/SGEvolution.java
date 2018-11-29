@@ -19,20 +19,20 @@ import net.minecraftforge.fml.relauncher.FMLRelaunchLog;
 import org.apache.logging.log4j.Level;
 
 /**
- * LanteaCraft FML mod interface
+ * SG Evolution FML mod interface
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Mod(modid = BuildInfo.modID, name = BuildInfo.modName, version = BuildInfo.versionNumber + "-" + BuildInfo.buildNumber, dependencies = "after:ComputerCraft;after:OpenComputers;after:BuildCraft|Core;after:IC2;after:SGCraft")
-public class LanteaCraft {
+public class SGEvolution {
 
 	/** The mod instanceof */
-	public static volatile LanteaCraft instance;
+	public static volatile SGEvolution instance;
 
 	/** Default constructor */
-	public LanteaCraft() {
-		LanteaCraft.instance = this;
+	public SGEvolution() {
+		SGEvolution.instance = this;
 		FMLRelaunchLog.log(Level.INFO, "LanteaCraft ready for action!");
 	}
 
@@ -60,7 +60,7 @@ public class LanteaCraft {
 			LCLog.fatal("modify it yourself. Going to proceed with loading anyway.");
 		}
 		Tracer.begin(this);
-		LCRuntime.runtime.preinit(event);
+		SGERuntime.runtime.preinit(event);
 		Tracer.end();
 	}
 

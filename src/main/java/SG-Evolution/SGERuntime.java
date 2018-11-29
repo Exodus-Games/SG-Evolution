@@ -37,15 +37,15 @@ import net.minecraftforge.fml.common.event.FMLServerStoppingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 /**
- * LanteaCraft main mod container
+ * SG Evolution main mod container
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class LCRuntime implements ILCAPIProxy {
+public class SGERuntime implements ILCAPIProxy {
 
 	/** The runtime instance */
-	public static final LCRuntime runtime = new LCRuntime();
+	public static final SGERuntime runtime = new LCRuntime();
 
 	/** The LC blocks container */
 	private final Blocks blocks = new Blocks();
@@ -67,7 +67,7 @@ public class LCRuntime implements ILCAPIProxy {
 	private final Interfaces interfaces = new Interfaces();
 
 	/** Container of all registrations */
-	private final LCInit container = new LCInit();
+	private final SGE-init container = new SGEinit();
 
 	private final ConfigurationController config = new ConfigurationController();
 	/** Network driver */
@@ -183,9 +183,9 @@ public class LCRuntime implements ILCAPIProxy {
 	 *            The FML pre initialization event.
 	 */
 	public void preinit(FMLPreInitializationEvent event) {
-		LCLog.debug("LCRuntime entering phase preinit");
+		LCLog.debug("SGERuntime entering phase preinit");
 		config.initialize(event.getSuggestedConfigurationFile().getParentFile());
-		LCCreativeTabManager.registerTab("LanteaCraft", null);
+		LCCreativeTabManager.registerTab("SG Evolution", null);
 		container.preinit(this, event);
 		hints.preInit();
 	}
@@ -197,7 +197,7 @@ public class LCRuntime implements ILCAPIProxy {
 	 *            The FML initialization event.
 	 */
 	public void init(FMLInitializationEvent event) {
-		LCLog.debug("LCRuntime entering phase init");
+		LCLog.debug("SGERuntime entering phase init");
 		container.init(this, event);
 		network.init(this, event);
 		((DefinitionRegistry) registries().definitions()).init(this, event);
@@ -215,7 +215,7 @@ public class LCRuntime implements ILCAPIProxy {
 	 *            The FML post initialization event.
 	 */
 	public void postinit(FMLPostInitializationEvent event) {
-		LCLog.debug("LCRuntime entering phase postinit");
+		LCLog.debug("SGERuntime entering phase postinit");
 		container.postinit(this, event);
 		hints.postInit();
 		config.commit();
