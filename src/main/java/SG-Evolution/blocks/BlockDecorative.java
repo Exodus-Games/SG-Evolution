@@ -4,7 +4,7 @@ import java.util.List;
 
 import SGE.api.components.ComponentType;
 import SGE.api.defs.Definition;
-import SGE.common.base.LCBlock;
+import SGE.common.base.SGEBlock;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.resource.ResourceAccess;
 import SGE.items.ItemBlockDecorative;
