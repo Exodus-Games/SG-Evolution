@@ -1,4 +1,4 @@
-package lc.client.render.gfx.beam;
+package SGE.client.render.gfx.beam;
 
 import org.lwjgl.opengl.GL11;
 
@@ -9,9 +9,9 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import lc.client.opengl.LCEntityFX;
-import lc.common.resource.ResourceAccess;
-import lc.common.util.math.Vector3;
+import SGE.client.opengl.LCEntityFX;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.util.math.Vector3;
 
 public class GFXBeam extends LCEntityFX {
 
