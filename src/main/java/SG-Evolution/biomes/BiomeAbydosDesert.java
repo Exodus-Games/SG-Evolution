@@ -2,9 +2,9 @@ package SGE.biomes;
 
 import java.util.Random;
 
-import lc.api.defs.IBiomeDefinition;
-import lc.api.defs.IDefinitionReference;
-import lc.common.impl.registry.DefinitionReference;
+import SGE.api.defs.IBiomeDefinition;
+import SGE.api.defs.IDefinitionReference;
+import SGE.common.impl.registry.DefinitionReference;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
