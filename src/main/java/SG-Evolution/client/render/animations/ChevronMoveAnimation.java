@@ -1,13 +1,13 @@
-package lc.client.render.animations;
+package SGE.client.render.animations;
 
-import lc.client.animation.Animation;
-import lc.common.base.LCTile;
-import lc.common.util.game.RunnableTileCallback;
+import SGE.client.animation.Animation;
+import SGE.common.base.LCTile;
+import SGE.common.util.game.RunnableTileCallback;
 
 /**
  * Chevron move animation implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ChevronMoveAnimation extends Animation {
