@@ -1,6 +1,6 @@
-package lc.client.models;
+package SGE.client.models;
 
-import lc.client.models.loader.WavefrontModel;
+import SGE.client.models.loader.WavefrontModel;
 import lc.common.LCLog;
 import lc.common.resource.ResourceAccess;
 
@@ -12,7 +12,7 @@ public class ModelTransportRing extends WavefrontModel {
 		try {
 			$ = new ModelTransportRing();
 		} catch (WavefrontModelException mfe) {
-			LCLog.warn("Failed to load ModelTransportRing, model error", mfe);
+			SGELog.warn("Failed to load ModelTransportRing, model error", mfe);
 		}
 	}
 
