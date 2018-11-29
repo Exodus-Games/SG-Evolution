@@ -1,4 +1,4 @@
-package lc.client.models.loader;
+package SGE.client.models.loader;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,7 +22,7 @@ import org.lwjgl.opengl.GL11;
  * patterns is exceptionally expensive (even when they're cached) which is the
  * exact reason *why* we use parser tools (such as look-ahead).
  *
- * @author AfterLifeLochie, LexManos, AbrarSyed, pahimar, cpw
+ * @author Exodus Games, LexManos, AbrarSyed, pahimar, cpw
  *
  */
 public class WavefrontModel {
@@ -70,7 +70,7 @@ public class WavefrontModel {
 	/**
 	 * Model vertex container.
 	 *
-	 * @author AfterLifeLochie, LexManos, AbrarSyed, pahimar
+	 * @author Exodus Games, LexManos, AbrarSyed, pahimar
 	 */
 	public static class Vertex {
 		/** The x-coordinate of the vertex */
@@ -108,7 +108,7 @@ public class WavefrontModel {
 	/**
 	 * Texture coordinate container
 	 *
-	 * @author AfterLifeLochie, LexManos, AbrarSyed, pahimar
+	 * @author Exodus Games, LexManos, AbrarSyed, pahimar
 	 */
 	public static class TextureCoord {
 		/** The u-coordinate of the texture coordinate */
@@ -146,7 +146,7 @@ public class WavefrontModel {
 	/**
 	 * Model face container.
 	 *
-	 * @author AfterLifeLochie, LexManos, AbrarSyed, pahimar
+	 * @author Exodus Games, LexManos, AbrarSyed, pahimar
 	 */
 	public static class Face {
 		/** The list of verticies */
@@ -229,7 +229,7 @@ public class WavefrontModel {
 	/**
 	 * Model element group container.
 	 *
-	 * @author AfterLifeLochie, LexManos, AbrarSyed, pahimar
+	 * @author Exodus Games, LexManos, AbrarSyed, pahimar
 	 */
 	public static class ElementGroup {
 		/** The name of the group */
