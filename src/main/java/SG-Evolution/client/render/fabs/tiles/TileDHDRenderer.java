@@ -1,17 +1,17 @@
-package lc.client.render.fabs.tiles;
+package SGE.client.render.fabs.tiles;
 
 import org.lwjgl.opengl.GL11;
 
-import lc.api.stargate.StargateType;
-import lc.client.models.ModelDHD;
-import lc.common.base.LCTile;
-import lc.common.base.LCTileRenderer;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.util.math.Orientations;
-import lc.tiles.TileDHD;
+import SGE.api.stargate.StargateType;
+import SGE.client.models.ModelDHD;
+import SGE.common.base.LCTile;
+import SGE.common.base.LCTileRenderer;
+import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.util.math.Orientations;
+import SGE.tiles.TileDHD;
 
-public class TileDHDRenderer extends LCTileRenderer {
+public class TileDHDRenderer extends SGETileRenderer {
 
 
 	@Override
@@ -25,7 +25,7 @@ public class TileDHDRenderer extends LCTileRenderer {
 	}
 
 	@Override
-	public boolean renderTileEntityAt(LCTile tile, LCTileRenderPipeline renderer, double x, double y, double z,
+	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 		if (ModelDHD.$ == null)
 			return false;
