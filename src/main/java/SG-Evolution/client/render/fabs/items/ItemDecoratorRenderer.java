@@ -1,9 +1,9 @@
-package lc.client.render.fabs.items;
+package SGE.client.render.fabs.items;
 
-import lc.common.base.LCItemRenderer;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.util.data.ImmutablePair;
-import lc.common.util.game.BlockHelper;
+import SGE.common.base.LCItemRenderer;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.util.data.ImmutablePair;
+import SGE.common.util.game.BlockHelper;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
@@ -16,10 +16,10 @@ import org.lwjgl.opengl.GL11;
 /**
  * Decorator item tool renderer implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class ItemDecoratorRenderer extends LCItemRenderer {
+public class ItemDecoratorRenderer extends SGEItemRenderer {
 
 	private static RenderItem renderItem = new RenderItem();
 
