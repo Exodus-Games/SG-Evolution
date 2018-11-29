@@ -1,11 +1,11 @@
-package lc.client.render.animations;
+package SGE.client.render.animations;
 
-import lc.client.animation.Animation;
+import SGE.client.animation.Animation;
 
 /**
  * Chevron release animation implementation.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ChevronReleaseAnimation extends Animation {
