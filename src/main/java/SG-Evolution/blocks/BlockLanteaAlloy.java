@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -23,7 +23,7 @@ import net.minecraft.util.IIcon;
  *
  */
 @Definition(name = "blockLanteaAlloy", type = ComponentType.CORE, blockClass = BlockLanteaAlloy.class, itemBlockClass = ItemBlockLanteaAlloy.class)
-public class BlockLanteaAlloy extends LCBlock {
+public class BlockLanteaAlloy extends SGEBlock {
 	private IIcon missing;
 
 	/** Default constructor */
