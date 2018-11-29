@@ -11,17 +11,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import lc.LCRuntime;
-import lc.LanteaCraft;
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.api.rendering.IBlockRenderInfo;
-import lc.api.stargate.StargateType;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockDHD;
-import lc.tiles.TileDHD;
+import SGE.SGERuntime;
+import SGE.LanteaCraft;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.api.rendering.IBlockRenderInfo;
+import SGE.api.stargate.StargateType;
+import SGE.common.base.LCBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockDHD;
+import SGE.tiles.TileDHD;
 
 /**
  * Stargate DHD block implementation
