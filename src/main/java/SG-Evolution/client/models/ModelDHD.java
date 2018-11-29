@@ -14,7 +14,7 @@ public class ModelDHD extends WavefrontModel {
 		try {
 			$ = new ModelDHD();
 		} catch (WavefrontModelException mfe) {
-			LCLog.warn("Failed to load ModelDHD, model error", mfe);
+			SGELog.warn("Failed to load ModelDHD, model error", mfe);
 		}
 	}
 

@@ -1,12 +1,12 @@
-package lc.client.models;
+package SGE.client.models;
 
-import lc.client.models.loader.WavefrontModel;
+import SGE.client.models.loader.WavefrontModel;
 import net.minecraft.util.ResourceLocation;
 
 /**
  * Error model implementation
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ModelError extends WavefrontModel {
