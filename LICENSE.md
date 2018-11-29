@@ -1,4 +1,4 @@
-LanteaCraft License
+SG Evolution License
 ================
 
 0  Usage
