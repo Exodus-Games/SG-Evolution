@@ -1,6 +1,6 @@
-package lc.client.models;
+package SGE.client.models;
 
-import static lc.client.opengl.GLHelper.pushTexVertex;
+import static SGE.client.opengl.GLHelper.pushTexVertex;
 import lc.client.opengl.BufferDisplayList;
 import lc.client.render.fabs.tiles.TileStargateBaseRenderer;
 import lc.common.base.pipeline.LCTileRenderPipeline;
@@ -14,7 +14,7 @@ import org.lwjgl.opengl.GL11;
 /**
  * Stargate model factory
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ModelStargate {
