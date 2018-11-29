@@ -1,4 +1,4 @@
-package lc.client.render.fabs.entities;
+package SGE.client.render.fabs.entities;
 
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
@@ -11,19 +11,19 @@ import lc.api.defs.IDefinitionReference;
 import lc.common.base.LCEntityRenderer;
 import lc.common.base.pipeline.LCEntityRenderPipeline;
 
-public class EntityStaffProjectileRenderer extends LCEntityRenderer {
+public class EntityStaffProjectileRenderer extends SGEEntityRenderer {
 
 	public EntityStaffProjectileRenderer() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public Class<? extends LCEntityRenderer> getParent() {
+	public Class<? extends SGEEntityRenderer> getParent() {
 		return null;
 	}
 
 	@Override
-	public boolean doRender(LCEntityRenderPipeline render, Entity e, double rpx, double rpy, double rpz, float yaw,
+	public boolean doRender(SGEEntityRenderPipeline render, Entity e, double rpx, double rpy, double rpz, float yaw,
 			float frame) {
 		render.useEntityTexture(e);
 		GL11.glPushMatrix();
