@@ -86,7 +86,7 @@ public class HintProviderClient extends HintProviderServer {
 	public void init() {
 		super.init();
 
-		DefinitionRegistry registry = (DefinitionRegistry) LCRuntime.runtime
+		DefinitionRegistry registry = (DefinitionRegistry) SGERuntime.runtime
 				.registries().definitions();
 		registry.registerTileRenderer(TileStargateBase.class,
 				TileStargateBaseRenderer.class);
@@ -129,15 +129,15 @@ public class HintProviderClient extends HintProviderServer {
 		}
 
 		if (definition.getTileType() != null) {
-			Class<? extends LCTile> theTile = (Class<? extends LCTile>) definition
+			Class<? extends SGETile> theTile = (Class<? extends SGETile>) definition
 					.getTileType();
 			ClientRegistry.bindTileEntitySpecialRenderer(theTile,
 					tileRenderingHook);
 		}
 
 		if (definition.getItem() != null
-				&& definition.getItem() instanceof LCItem) {
-			LCItem theItem = (LCItem) definition.getItem();
+				&& definition.getItem() instanceof SGEItem) {
+			SGEItem theItem = (SGEItem) definition.getItem();
 			MinecraftForgeClient.registerItemRenderer(theItem,
 					itemRenderingHook);
 		}
