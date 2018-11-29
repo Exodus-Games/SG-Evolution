@@ -1,7 +1,7 @@
-package lc.client.render.gfx.particle;
+package SGE.client.render.gfx.particle;
 
-import lc.client.opengl.LCEntityFX;
-import lc.common.resource.ResourceAccess;
+import SGE.client.opengl.LCEntityFX;
+import SGE.common.resource.ResourceAccess;
 
 import org.lwjgl.opengl.GL11;
 
