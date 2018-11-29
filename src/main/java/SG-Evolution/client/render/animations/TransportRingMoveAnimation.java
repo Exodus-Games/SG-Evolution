@@ -1,12 +1,12 @@
-package lc.client.render.animations;
+package SGE.client.render.animations;
 
-import lc.client.animation.Animation;
-import lc.common.util.game.RunnableTileCallback;
+import SGE.client.animation.Animation;
+import SGE.common.util.game.RunnableTileCallback;
 
 /**
  * Transport ring movement animation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class TransportRingMoveAnimation extends Animation {
