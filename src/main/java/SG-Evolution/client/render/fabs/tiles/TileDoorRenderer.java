@@ -1,18 +1,18 @@
-package lc.client.render.fabs.tiles;
+package SGE.client.render.fabs.tiles;
 
 import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import lc.common.base.LCTile;
-import lc.common.base.LCTileRenderer;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.common.util.math.Orientations;
-import lc.tiles.TileLanteaDoor;
+import SGE.common.base.LCTile;
+import SGE.common.base.LCTileRenderer;
+import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.util.math.Orientations;
+import SGE.tiles.TileLanteaDoor;
 
-public class TileDoorRenderer extends LCTileRenderer {
+public class TileDoorRenderer extends SGETileRenderer {
 
 	@Override
 	public void configure(ComponentConfig c) {
@@ -26,7 +26,7 @@ public class TileDoorRenderer extends LCTileRenderer {
 	}
 
 	@Override
-	public boolean renderTileEntityAt(LCTile tile, LCTileRenderPipeline renderer, double x, double y, double z,
+	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 
 		TileLanteaDoor door = (TileLanteaDoor) tile;
