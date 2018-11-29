@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 import java.util.Random;
@@ -25,11 +25,11 @@ import lc.tiles.TileLanteaDoor;
 /**
  * LanteaCraft door block implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "lanteaDoor", type = ComponentType.DECOR, blockClass = BlockLanteaDoor.class, itemBlockClass = ItemLanteaDoor.class, tileClass = TileLanteaDoor.class)
-public class BlockLanteaDoor extends LCBlock {
+public class BlockLanteaDoor extends SGEBlock {
 
 	private static final int blockCount = 2;
 

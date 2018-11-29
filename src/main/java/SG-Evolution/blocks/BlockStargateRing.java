@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -24,11 +24,11 @@ import net.minecraft.world.IBlockAccess;
 /**
  * Stargate ring implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "stargateRing", type = ComponentType.STARGATE, blockClass = BlockStargateRing.class, itemBlockClass = ItemBlockStargateRing.class, tileClass = TileStargateRing.class)
-public class BlockStargateRing extends LCBlock {
+public class BlockStargateRing extends SGEBlock {
 
 	/** Mask for all block types */
 	private static final int blockMask = 2;
@@ -54,7 +54,7 @@ public class BlockStargateRing extends LCBlock {
 		@Override
 		public boolean doProperty(String property, IBlockAccess access, int data, int x, int y, int z, boolean def) {
 			if (property.equalsIgnoreCase("noRender")) {
-				LCTile t = (LCTile) access.getTileEntity(x, y, z);
+				SGETile t = (SGETile) access.getTileEntity(x, y, z);
 				if (t != null && t instanceof TileStargateRing)
 					return ((TileStargateRing) t).getState() != MultiblockState.FORMED;
 			}

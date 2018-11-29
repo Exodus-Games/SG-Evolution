@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 import java.util.Random;
@@ -21,11 +21,11 @@ import net.minecraft.util.IIcon;
 /**
  * LanteaCraft standard ore block implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "blockLanteaOre", type = ComponentType.CORE, blockClass = BlockLanteaOre.class, itemBlockClass = ItemBlockLanteaOre.class)
-public class BlockLanteaOre extends LCBlock {
+public class BlockLanteaOre extends SGEBlock {
 	private IIcon missing;
 
 	/** Default constructor */
@@ -57,7 +57,7 @@ public class BlockLanteaOre extends LCBlock {
 
 	@Override
 	public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_) {
-		return LCRuntime.runtime.items().lanteaOreItem.getItem();
+		return SGERuntime.runtime.items().lanteaOreItem.getItem();
 	}
 
 	@Override

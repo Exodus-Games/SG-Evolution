@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -26,11 +26,11 @@ import lc.tiles.TileDHD;
 /**
  * Stargate DHD block implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "stargateDHD", type = ComponentType.STARGATE, blockClass = BlockDHD.class, itemBlockClass = ItemBlockDHD.class, tileClass = TileDHD.class)
-public class BlockDHD extends LCBlock {
+public class BlockDHD extends SGEBlock {
 
 	/** Mask for all block types */
 	private static final int blockMask = 1;
@@ -154,7 +154,7 @@ public class BlockDHD extends LCBlock {
 			float cy, float cz) {
 		TileDHD te = (TileDHD) world.getTileEntity(x, y, z);
 		if (te != null) {
-			player.openGui(LanteaCraft.instance, LCRuntime.runtime.interfaces().dhdUI.getGUIID(), world, x, y, z);
+			player.openGui(SGEvolution.instance, SGERuntime.runtime.interfaces().dhdUI.getGUIID(), world, x, y, z);
 			return true;
 		}
 		return false;

@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -28,11 +28,11 @@ import net.minecraft.world.World;
 /**
  * Stargate base implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "stargateBase", type = ComponentType.STARGATE, blockClass = BlockStargateBase.class, itemBlockClass = ItemBlockStargateBase.class, tileClass = TileStargateBase.class)
-public class BlockStargateBase extends LCBlock {
+public class BlockStargateBase extends SGEBlock {
 
 	private static final int blockCount = StargateType.count();
 

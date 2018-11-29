@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import net.minecraft.block.material.Material;
 import lc.api.components.ComponentType;
@@ -9,7 +9,7 @@ import lc.items.ItemBlockConfigurator;
 import lc.tiles.TileConfigurator;
 
 @Definition(name = "blockConfigurator", type = ComponentType.CORE, blockClass = BlockConfigurator.class, itemBlockClass = ItemBlockConfigurator.class, tileClass = TileConfigurator.class)
-public class BlockConfigurator extends LCBlock {
+public class BlockConfigurator extends SGEBlock {
 
 	public BlockConfigurator() {
 		super(Material.ground);

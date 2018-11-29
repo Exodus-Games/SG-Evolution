@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -21,11 +21,11 @@ import lc.items.ItemBlockObelisk;
 /**
  * Obelisk block implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "blockObelisk", type = ComponentType.DECOR, blockClass = BlockObelisk.class, itemBlockClass = ItemBlockObelisk.class)
-public class BlockObelisk extends LCBlock {
+public class BlockObelisk extends SGEBlock {
 
 	private IIcon missing;
 

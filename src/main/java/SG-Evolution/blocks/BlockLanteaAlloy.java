@@ -19,7 +19,7 @@ import net.minecraft.util.IIcon;
 /**
  * LanteaCraft standard ore block implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "blockLanteaAlloy", type = ComponentType.CORE, blockClass = BlockLanteaAlloy.class, itemBlockClass = ItemBlockLanteaAlloy.class)

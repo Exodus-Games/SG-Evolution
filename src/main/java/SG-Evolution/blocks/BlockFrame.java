@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -12,7 +12,7 @@ import lc.items.ItemBlockFrame;
 import lc.tiles.TileFrame;
 
 @Definition(name = "frame", type = ComponentType.CORE, blockClass = BlockFrame.class, itemBlockClass = ItemBlockFrame.class, tileClass = TileFrame.class)
-public class BlockFrame extends LCBlock {
+public class BlockFrame extends SGEBlock {
 
 	IIcon sideTexture;
 

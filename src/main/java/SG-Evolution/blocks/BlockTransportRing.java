@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -14,11 +14,11 @@ import lc.tiles.TileTransportRing;
 /**
  * Transporter ring block implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "blockTransportRing", type = ComponentType.STARGATE, blockClass = BlockTransportRing.class, itemBlockClass = ItemBlockTransportRing.class, tileClass = TileTransportRing.class)
-public class BlockTransportRing extends LCBlock {
+public class BlockTransportRing extends SGEBlock {
 
 	IIcon topAndBottomTexture;
 	IIcon sideTexture;

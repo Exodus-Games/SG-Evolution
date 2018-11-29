@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -18,16 +18,16 @@ import net.minecraft.util.IIcon;
 /**
  * Decorative block implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "blockDecorative", type = ComponentType.DECOR, blockClass = BlockDecorative.class, itemBlockClass = ItemBlockDecorative.class)
-public class BlockDecorative extends LCBlock {
+public class BlockDecorative extends SGEBlock {
 
 	/**
 	 * Decorative block type map
 	 * 
-	 * @author AfterLifeLochie
+	 * @author Ecodus Games
 	 *
 	 */
 	public static enum DecorBlockTypes {

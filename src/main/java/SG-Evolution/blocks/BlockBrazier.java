@@ -1,4 +1,4 @@
-package lc.blocks;
+package SGE.blocks;
 
 import java.util.List;
 
@@ -22,11 +22,11 @@ import lc.tiles.TileBrazier;
 /**
  * Brazier block implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Definition(name = "blockBrazier", type = ComponentType.DECOR, blockClass = BlockBrazier.class, itemBlockClass = ItemBlockBrazier.class, tileClass = TileBrazier.class)
-public class BlockBrazier extends LCBlock {
+public class BlockBrazier extends SGEBlock {
 
 	private IIcon missing;
 
