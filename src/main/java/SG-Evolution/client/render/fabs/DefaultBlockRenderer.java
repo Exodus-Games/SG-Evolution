@@ -1,17 +1,17 @@
-package lc.client.render.fabs;
+package SGE.client.render.fabs;
 
-import lc.api.defs.IDefinitionReference;
-import lc.api.rendering.IBlockRenderInfo;
-import lc.api.rendering.IBlockSkinnable;
-import lc.api.rendering.IRenderInfo;
-import lc.common.base.LCBlock;
-import lc.common.base.LCBlockRenderer;
-import lc.common.base.LCTile;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.impl.registry.DefinitionReference;
-import lc.common.util.game.BlockContainerProxy;
-import lc.common.util.game.WorldProxy;
-import lc.common.util.math.Trans3;
+import SGE.api.defs.IDefinitionReference;
+import SGE.api.rendering.IBlockRenderInfo;
+import SGE.api.rendering.IBlockSkinnable;
+import SGE.api.rendering.IRenderInfo;
+import SGE.common.base.LCBlock;
+import SGE.common.base.LCBlockRenderer;
+import SGE.common.base.LCTile;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.impl.registry.DefinitionReference;
+import SGE.common.util.game.BlockContainerProxy;
+import SGE.common.util.game.WorldProxy;
+import SGE.common.util.math.Trans3;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.world.IBlockAccess;
@@ -20,10 +20,10 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Default block renderer implementation
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class DefaultBlockRenderer extends LCBlockRenderer {
+public class DefaultBlockRenderer extends SGEBlockRenderer {
 
 	/** Map of ForgeDirection to rotations on axis 0 */
 	private static int[] rotationMap = new int[] { 0, 0, 0, 2, 1, 3 };
@@ -35,16 +35,16 @@ public class DefaultBlockRenderer extends LCBlockRenderer {
 	}
 
 	@Override
-	public Class<? extends LCBlockRenderer> getParent() {
+	public Class<? extends SGEBlockRenderer> getParent() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean renderInventoryBlock(Block block, RenderBlocks renderer, int metadata) {
-		if (!(block instanceof LCBlock))
+		if (!(block instanceof SGEBlock))
 			return false;
-		LCBlock theBlock = (LCBlock) block;
+		SGEBlock theBlock = (SGEBlock) block;
 		IBlockRenderInfo info = null;
 		if (theBlock instanceof IRenderInfo)
 			info = ((IRenderInfo) theBlock).renderInfoBlock();
@@ -60,7 +60,7 @@ public class DefaultBlockRenderer extends LCBlockRenderer {
 	public boolean renderWorldBlock(Block block, RenderBlocks renderer, IBlockAccess world, int x, int y, int z) {
 		if (!(block instanceof LCBlock))
 			return false;
-		LCBlock theBlock = (LCBlock) block;
+		SGEBlock theBlock = (SGEBlock) block;
 		IBlockRenderInfo info = null;
 		if (theBlock instanceof IRenderInfo)
 			info = ((IRenderInfo) theBlock).renderInfoBlock();
@@ -116,12 +116,12 @@ public class DefaultBlockRenderer extends LCBlockRenderer {
 		return flag;
 	}
 
-	private Trans3 preRenderInInventory(LCBlock theBlock, IBlockRenderInfo info, int metadata, RenderBlocks renderer,
+	private Trans3 preRenderInInventory(SGEBlock theBlock, IBlockRenderInfo info, int metadata, RenderBlocks renderer,
 			Trans3 trans) {
 		return trans;
 	}
 
-	private boolean postRenderInInventory(LCBlock theBlock, IBlockRenderInfo info, int metadata, RenderBlocks renderer) {
+	private boolean postRenderInInventory(SGEBlock theBlock, IBlockRenderInfo info, int metadata, RenderBlocks renderer) {
 		return true;
 	}
 
