@@ -1,17 +1,17 @@
-package lc.client.render.fabs.tiles;
+package SGE.client.render.fabs.tiles;
 
-import lc.api.stargate.StargateType;
-import lc.client.animation.Animation;
-import lc.client.models.ModelStargate;
-import lc.common.base.LCTile;
-import lc.common.base.LCTileRenderer;
-import lc.common.base.multiblock.MultiblockState;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.common.resource.ResourceMap;
-import lc.common.util.data.StateMap;
-import lc.tiles.TileStargateBase;
+import SGE.api.stargate.StargateType;
+import SGE.client.animation.Animation;
+import SGE.client.models.ModelStargate;
+import SGE.common.base.LCTile;
+import SGE.common.base.LCTileRenderer;
+import SGE.common.base.multiblock.MultiblockState;
+import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.resource.ResourceMap;
+import SGE.common.util.data.StateMap;
+import SGE.tiles.TileStargateBase;
 import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
@@ -19,10 +19,10 @@ import org.lwjgl.opengl.GL11;
 /**
  * Stargate base tile renderer.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class TileStargateBaseRenderer extends LCTileRenderer {
+public class TileStargateBaseRenderer extends SGETileRenderer {
 
 	/** The texture resource map */
 	public final ResourceMap resources = new ResourceMap();
@@ -69,7 +69,7 @@ public class TileStargateBaseRenderer extends LCTileRenderer {
 	}
 
 	@Override
-	public boolean renderTileEntityAt(LCTile tile, LCTileRenderPipeline renderer, double x, double y, double z,
+	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 		if (tile instanceof TileStargateBase) {
 			TileStargateBase base = (TileStargateBase) tile;
@@ -92,7 +92,7 @@ public class TileStargateBaseRenderer extends LCTileRenderer {
 		return true;
 	}
 
-	private void renderGfxHorizonImmediate(TileStargateBase tile, LCTileRenderPipeline pipeline, double x, double y,
+	private void renderGfxHorizonImmediate(TileStargateBase tile, SGETileRenderPipeline pipeline, double x, double y,
 			double z) {
 		pipeline.bind(fxHorizon);
 		GL11.glDisable(GL11.GL_CULL_FACE);

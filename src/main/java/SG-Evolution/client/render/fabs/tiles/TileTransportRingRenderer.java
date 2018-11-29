@@ -1,19 +1,19 @@
-package lc.client.render.fabs.tiles;
+package SGE.client.render.fabs.tiles;
 
-import lc.client.animation.Animation;
-import lc.client.models.ModelTransportRing;
-import lc.common.base.LCTile;
-import lc.common.base.LCTileRenderer;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.common.util.data.StateMap;
-import lc.tiles.TileTransportRing;
+import SGE.client.animation.Animation;
+import SGE.client.models.ModelTransportRing;
+import SGE.common.base.LCTile;
+import SGE.common.base.LCTileRenderer;
+import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.util.data.StateMap;
+import SGE.tiles.TileTransportRing;
 import net.minecraftforge.fml.client.FMLClientHandler;
 
 import org.lwjgl.opengl.GL11;
 
-public class TileTransportRingRenderer extends LCTileRenderer {
+public class TileTransportRingRenderer extends SGETileRenderer {
 
 	public TileTransportRingRenderer() {
 		// TODO Auto-generated constructor stub
@@ -32,7 +32,7 @@ public class TileTransportRingRenderer extends LCTileRenderer {
 	}
 
 	@Override
-	public boolean renderTileEntityAt(LCTile tile, LCTileRenderPipeline renderer, double x, double y, double z,
+	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 		if (ModelTransportRing.$ == null)
 			return false;
