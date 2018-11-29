@@ -1,4 +1,4 @@
-package lc.client.render.fabs.blocks;
+package SGE.client.render.fabs.blocks;
 
 import org.lwjgl.opengl.GL11;
 
@@ -13,10 +13,10 @@ import lc.common.configuration.xml.ComponentConfig;
 /**
  * Stargate DHD block renderer
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class BlockDHDRenderer extends LCBlockRenderer {
+public class BlockDHDRenderer extends SGEBlockRenderer {
 
 	@Override
 	public void configure(ComponentConfig c) {
@@ -25,7 +25,7 @@ public class BlockDHDRenderer extends LCBlockRenderer {
 	}
 
 	@Override
-	public Class<? extends LCBlockRenderer> getParent() {
+	public Class<? extends SGEBlockRenderer> getParent() {
 		return null;
 	}
 
