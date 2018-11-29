@@ -1,12 +1,12 @@
 package SGE.blocks;
 
 import net.minecraft.block.material.Material;
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.items.ItemBlockConfigurator;
-import lc.tiles.TileConfigurator;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.common.base.LCBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.items.ItemBlockConfigurator;
+import SGE.tiles.TileConfigurator;
 
 @Definition(name = "blockConfigurator", type = ComponentType.CORE, blockClass = BlockConfigurator.class, itemBlockClass = ItemBlockConfigurator.class, tileClass = TileConfigurator.class)
 public class BlockConfigurator extends SGEBlock {
