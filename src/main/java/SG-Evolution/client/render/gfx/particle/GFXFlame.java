@@ -1,4 +1,4 @@
-package lc.client.render.gfx.particle;
+package SGE.client.render.gfx.particle;
 
 import org.lwjgl.opengl.GL11;
 
@@ -6,8 +6,8 @@ import net.minecraft.client.particle.EntityFX;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import lc.client.opengl.LCEntityFX;
-import lc.common.resource.ResourceAccess;
+import SGE.client.opengl.LCEntityFX;
+import SGE.common.resource.ResourceAccess;
 
 public class GFXFlame extends LCEntityFX {
 
