@@ -1,4 +1,4 @@
-package lc.client.render.animations;
+package SGE.client.render.animations;
 
 import net.minecraft.world.World;
 import lc.LCRuntime;
