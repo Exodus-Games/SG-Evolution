@@ -1,31 +1,31 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official Exodus Games API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api;
+package SGE.api;
 
-import lc.api.components.IRegistryContainer;
-import lc.api.init.Biomes;
-import lc.api.init.Blocks;
-import lc.api.init.Dimensions;
-import lc.api.init.Entities;
-import lc.api.init.Interfaces;
-import lc.api.init.Items;
-import lc.api.init.Recipes;
-import lc.api.init.Structures;
+import SGE.api.components.IRegistryContainer;
+import SGE.api.init.Biomes;
+import SGE.api.init.Blocks;
+import SGE.api.init.Dimensions;
+import SGE.api.init.Entities;
+import SGE.api.init.Interfaces;
+import SGE.api.init.Items;
+import SGE.api.init.Recipes;
+import SGE.api.init.Structures;
 
 /**
  * API proxy interface
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public interface ILCAPIProxy {
+public interface ISGEAPIProxy {
 
 	/**
-	 * Get the current LanteaCraft build and runtime information.
+	 * Get the current Exodus Games build and runtime information.
 	 *
-	 * @return The current LanteaCraft build and runtime information proxy.
+	 * @return The current Exodus Games build and runtime information proxy.
 	 */
 	public IModInfo info();
 
@@ -37,21 +37,21 @@ public interface ILCAPIProxy {
 	public boolean signedState();
 
 	/**
-	 * Get the current LanteaCraft block registry
+	 * Get the current Exodus Games block registry
 	 *
 	 * @return The list of blocks
 	 */
 	public Blocks blocks();
 
 	/**
-	 * Get the current LanteaCraft item registry
+	 * Get the current Exodus Games item registry
 	 *
 	 * @return The list of items
 	 */
 	public Items items();
 
 	/**
-	 * Get the current LanteaCraft entity registry
+	 * Get the current Exodus Games entity registry
 	 *
 	 * @return The list of entities
 	 */
