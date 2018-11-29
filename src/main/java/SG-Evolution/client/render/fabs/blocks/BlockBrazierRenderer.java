@@ -1,4 +1,4 @@
-package lc.client.render.fabs.blocks;
+package SGE.client.render.fabs.blocks;
 
 import org.lwjgl.opengl.GL11;
 
@@ -14,7 +14,7 @@ import lc.common.configuration.xml.ComponentConfig;
 /**
  * Brazier block renderer implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class BlockBrazierRenderer extends LCBlockRenderer {
@@ -26,7 +26,7 @@ public class BlockBrazierRenderer extends LCBlockRenderer {
 	}
 
 	@Override
-	public Class<? extends LCBlockRenderer> getParent() {
+	public Class<? extends SGEBlockRenderer> getParent() {
 		return DefaultBlockRenderer.class;
 	}
 
