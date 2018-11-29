@@ -1,16 +1,16 @@
-package lc.client.render.fabs.tiles;
+package SGE.client.render.fabs.tiles;
 
 import org.lwjgl.opengl.GL11;
 
-import lc.client.models.ModelLaptop;
-import lc.common.base.LCTile;
-import lc.common.base.LCTileRenderer;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.common.util.math.Orientations;
+import SGE.client.models.ModelLaptop;
+import SGE.common.base.LCTile;
+import SGE.common.base.LCTileRenderer;
+import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.util.math.Orientations;
 
-public class TileConfiguratorRenderer extends LCTileRenderer {
+public class TileConfiguratorRenderer extends SGETileRenderer {
 
 	public TileConfiguratorRenderer() {
 		// TODO Auto-generated constructor stub
@@ -23,13 +23,13 @@ public class TileConfiguratorRenderer extends LCTileRenderer {
 	}
 
 	@Override
-	public LCTileRenderer getParent() {
+	public SGETileRenderer getParent() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public boolean renderTileEntityAt(LCTile tile, LCTileRenderPipeline renderer, double x, double y, double z,
+	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 		if (ModelLaptop.$ == null)
 			return false;
