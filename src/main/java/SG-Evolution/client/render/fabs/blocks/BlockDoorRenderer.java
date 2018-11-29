@@ -1,4 +1,4 @@
-package lc.client.render.fabs.blocks;
+package SGE.client.render.fabs.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
@@ -10,10 +10,10 @@ import lc.common.configuration.xml.ComponentConfig;
 /**
  * Door block renderer implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class BlockDoorRenderer extends LCBlockRenderer {
+public class BlockDoorRenderer extends SGEBlockRenderer {
 
 	@Override
 	public void configure(ComponentConfig c) {
@@ -22,7 +22,7 @@ public class BlockDoorRenderer extends LCBlockRenderer {
 	}
 
 	@Override
-	public Class<? extends LCBlockRenderer> getParent() {
+	public Class<? extends SGEBlockRenderer> getParent() {
 		return null;
 	}
 
