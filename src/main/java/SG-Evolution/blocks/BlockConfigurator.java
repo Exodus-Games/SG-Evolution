@@ -3,7 +3,7 @@ package SGE.blocks;
 import net.minecraft.block.material.Material;
 import SGE.api.components.ComponentType;
 import SGE.api.defs.Definition;
-import SGE.common.base.LCBlock;
+import SGE.common.base.SGEBlock;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.items.ItemBlockConfigurator;
 import SGE.tiles.TileConfigurator;
