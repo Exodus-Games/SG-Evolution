@@ -1,9 +1,9 @@
-package lc.client.models;
+package SGE.client.models;
 
-import lc.api.stargate.StargateType;
-import lc.client.models.loader.WavefrontModel;
-import lc.common.LCLog;
-import lc.common.resource.ResourceAccess;
+import SGE.api.stargate.StargateType;
+import SGE.client.models.loader.WavefrontModel;
+import SGE.common.LCLog;
+import SGE.common.resource.ResourceAccess;
 import net.minecraftforge.fml.client.FMLClientHandler;
 
 public class ModelDHD extends WavefrontModel {
