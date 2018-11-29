@@ -1,0 +1,18 @@
+[{
+	"modid": "Stargate_Evolution",
+	"name": "Stargate Evolution",
+	"description": "Adds Stargates and other Stargate-themed tech!",
+	"version": "${version}",
+	"mcversion": "${mcversion}",
+	"url": "http://www.minecraftforum.net/topic/2059956-",
+	"updateUrl": "",
+	"authors": [ "Exodus Games", "Greg Ewing" ],
+	"credits": "Greg_Ewing for the original mod, Exodus-games.com for Continued Development.",
+	"logoFile": "/assets/textures/forge/LanteaCraft.png",
+	"screenshots": [ ],
+	"parent": "",
+	"requiredMods": [ "Forge" ],
+	"dependencies": [ "ComputerCraft", "OpenComputers" ],
+	"dependants": [ ],
+	"useDependencyInformation": "true"
+}]
