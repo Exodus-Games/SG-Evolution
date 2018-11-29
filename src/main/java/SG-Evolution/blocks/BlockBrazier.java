@@ -10,14 +10,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.api.world.OreType;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockBrazier;
-import lc.tiles.TileBrazier;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.api.world.OreType;
+import SGE.common.base.LCBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockBrazier;
+import SGE.tiles.TileBrazier;
 
 /**
  * Brazier block implementation
