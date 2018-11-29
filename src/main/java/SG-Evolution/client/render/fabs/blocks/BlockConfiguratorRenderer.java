@@ -1,4 +1,4 @@
-package lc.client.render.fabs.blocks;
+package SGE.client.render.fabs.blocks;
 
 import org.lwjgl.opengl.GL11;
 
@@ -11,7 +11,7 @@ import lc.common.base.LCBlockRenderer;
 import lc.common.configuration.xml.ComponentConfig;
 import lc.common.resource.ResourceAccess;
 
-public class BlockConfiguratorRenderer extends LCBlockRenderer {
+public class BlockConfiguratorRenderer extends SGEBlockRenderer {
 
 	public BlockConfiguratorRenderer() {
 		// TODO Auto-generated constructor stub
@@ -24,7 +24,7 @@ public class BlockConfiguratorRenderer extends LCBlockRenderer {
 	}
 
 	@Override
-	public Class<? extends LCBlockRenderer> getParent() {
+	public Class<? extends SGEBlockRenderer> getParent() {
 		// TODO Auto-generated method stub
 		return null;
 	}
