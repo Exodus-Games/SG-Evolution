@@ -1,4 +1,4 @@
-package lc.biomes;
+package SGE.biomes;
 
 import java.util.Random;
 
@@ -13,7 +13,7 @@ import net.minecraft.world.gen.feature.WorldGenDesertWells;
 /**
  * Abydos desert biome implementation
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class BiomeAbydosDesert extends BiomeGenBase implements IBiomeDefinition {
