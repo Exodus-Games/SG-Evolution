@@ -1,16 +1,16 @@
-package lc.client.render.fabs;
+package SGE.client.render.fabs;
 
 import java.util.ArrayList;
 
-import lc.client.models.ModelError;
-import lc.client.models.loader.WavefrontModel.WavefrontModelException;
-import lc.client.opengl.BufferDisplayList;
-import lc.common.LCLog;
-import lc.common.base.LCTile;
-import lc.common.base.LCTileRenderer;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
+import SGE.client.models.ModelError;
+import SGE.client.models.loader.WavefrontModel.WavefrontModelException;
+import SGE.client.opengl.BufferDisplayList;
+import SGE.common.LCLog;
+import SGE.common.base.LCTile;
+import SGE.common.base.LCTileRenderer;
+import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
 import net.minecraft.client.Minecraft;
 
 import org.lwjgl.opengl.GL11;
@@ -18,17 +18,17 @@ import org.lwjgl.opengl.GL11;
 /**
  * The default tile entity renderer implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class DefaultTileRenderer extends LCTileRenderer {
+public class DefaultTileRenderer extends SGETileRenderer {
 
 	/** The system error model */
 	private ModelError model;
 	/** Display buffer for error model */
 	private final BufferDisplayList listModel = new BufferDisplayList();
 
-	private ArrayList<Class<? extends LCTile>> seenTypes;
+	private ArrayList<Class<? extends SGETile>> seenTypes;
 
 	@Override
 	public void configure(ComponentConfig c) {
@@ -47,16 +47,16 @@ public class DefaultTileRenderer extends LCTileRenderer {
 		} catch (WavefrontModelException e) {
 			e.printStackTrace();
 		}
-		seenTypes = new ArrayList<Class<? extends LCTile>>();
+		seenTypes = new ArrayList<Class<? extends SGETile>>();
 	}
 
 	@Override
-	public LCTileRenderer getParent() {
+	public SGETileRenderer getParent() {
 		return null;
 	}
 
 	@Override
-	public boolean renderTileEntityAt(LCTile tile, LCTileRenderPipeline renderer, double x, double y, double z,
+	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 		if (!seenTypes.contains(tile.getClass())) {
 			Class<? extends LCTile> clazz = tile.getClass();
