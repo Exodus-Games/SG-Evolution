@@ -1,13 +1,13 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.world;
+package SGE.api.world;
 
 /**
  * Ore type list
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum OreType {
