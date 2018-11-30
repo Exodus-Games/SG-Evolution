@@ -7,9 +7,9 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
-import lc.api.defs.IDefinitionReference;
-import lc.common.base.LCEntityRenderer;
-import lc.common.base.pipeline.LCEntityRenderPipeline;
+import SGE.api.defs.IDefinitionReference;
+import SGE.common.base.SGEEntityRenderer;
+import SGE.common.base.pipeline.LCEntityRenderPipeline;
 
 public class EntityStaffProjectileRenderer extends SGEEntityRenderer {
 
@@ -84,7 +84,7 @@ public class EntityStaffProjectileRenderer extends SGEEntityRenderer {
 	}
 
 	@Override
-	public ResourceLocation getEntityTexture(LCEntityRenderPipeline render, Entity e) {
+	public ResourceLocation getEntityTexture(SGEEntityRenderPipeline render, Entity e) {
 		// TODO Auto-generated method stub
 		return null;
 	}
