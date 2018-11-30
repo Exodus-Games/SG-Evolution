@@ -1,18 +1,18 @@
-package lc.common.base.multiblock;
+package SGE.common.base.multiblock;
 
 import java.util.List;
 
 import javax.naming.OperationNotSupportedException;
 
-import lc.LCRuntime;
-import lc.common.LCLog;
-import lc.common.base.LCTile;
-import lc.common.network.LCNetworkException;
-import lc.common.network.LCPacket;
-import lc.common.network.packets.LCMultiblockPacket;
-import lc.common.util.Tracer;
-import lc.common.util.math.DimensionPos;
-import lc.common.util.math.Vector3;
+import SGE.SGERuntime;
+import SGE.common.SGELog;
+import SGE.common.base.SGETile;
+import SGE.common.network.SGENetworkException;
+import SGE.common.network.SGEPacket;
+import SGE.common.network.packets.LCMultiblockPacket;
+import SGE.common.util.Tracer;
+import SGE.common.util.math.DimensionPos;
+import SGE.common.util.math.Vector3;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -21,14 +21,14 @@ import net.minecraft.util.BlockPos;
 /**
  * Internal multi-block implementation.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public abstract class LCMultiblockTile extends LCTile {
+public abstract class SGEMultiblockTile extends LCTile {
 
 	/**
 	 * The multi-block metadata compound. If you change this, you should call
-	 * {@link LCMultiblockTile#markMultiblockDirty()} to send the change to all
+	 * {@link SGEMultiblockTile#markMultiblockDirty()} to send the change to all
 	 * clients within range.
 	 */
 	private NBTTagCompound multiblockCompound = new NBTTagCompound();
@@ -100,9 +100,9 @@ public abstract class LCMultiblockTile extends LCTile {
 				return MultiblockState.NONE;
 			Vector3 owner = Vector3.from(multiblockCompound.getCompoundTag("owner"));
 			TileEntity tile = worldObj.getTileEntity(new BlockPos(owner.fx(), owner.fy(), owner.fz()));
-			if (!(tile instanceof LCMultiblockTile))
+			if (!(tile instanceof SGEMultiblockTile))
 				return MultiblockState.NONE;
-			return ((LCMultiblockTile) tile).getState();
+			return ((SGEMultiblockTile) tile).getState();
 		} else {
 			if (!multiblockCompound.hasKey("state"))
 				return MultiblockState.NONE;
@@ -151,28 +151,28 @@ public abstract class LCMultiblockTile extends LCTile {
 
 		if (multiblockNbtDirty) {
 			multiblockNbtDirty = false;
-			LCMultiblockPacket update = new LCMultiblockPacket(new DimensionPos(this), multiblockCompound);
-			LCRuntime.runtime.network().getPreferredPipe().sendToAllAround(update, update.target, 128.0d);
+			SGEMultiblockPacket update = new SGEMultiblockPacket(new DimensionPos(this), multiblockCompound);
+			SGERuntime.runtime.network().getPreferredPipe().sendToAllAround(update, update.target, 128.0d);
 		}
 		Tracer.end();
 	}
 
 	@Override
-	public void thinkPacket(LCPacket packet, EntityPlayer player) throws LCNetworkException {
+	public void thinkPacket(LCPacket packet, EntityPlayer player) throws SGENetworkException {
 		Tracer.begin(this);
-		if (packet instanceof LCMultiblockPacket)
+		if (packet instanceof SGEMultiblockPacket)
 			if (worldObj.isRemote) {
-				multiblockCompound = ((LCMultiblockPacket) packet).compound;
+				multiblockCompound = ((SGEMultiblockPacket) packet).compound;
 				worldObj.markBlockForUpdate(getPos());
 			}
 		Tracer.end();
 	}
 
 	@Override
-	public void sendPackets(List<LCPacket> packets) throws LCNetworkException {
+	public void sendPackets(List<LCPacket> packets) throws SGENetworkException {
 		super.sendPackets(packets);
 		Tracer.begin(this);
-		packets.add(new LCMultiblockPacket(new DimensionPos(this), multiblockCompound));
+		packets.add(new SGEMultiblockPacket(new DimensionPos(this), multiblockCompound));
 		Tracer.end();
 	}
 
