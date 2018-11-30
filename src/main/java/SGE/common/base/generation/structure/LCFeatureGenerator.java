@@ -1,30 +1,30 @@
-package lc.common.base.generation.structure;
+package SGE.common.base.generation.structure;
 
 import java.lang.reflect.Constructor;
 import java.util.Map;
 import java.util.Random;
 
-import lc.LCRuntime;
-import lc.api.defs.IStructureDefinition;
-import lc.common.LCLog;
-import lc.common.impl.registry.StructureRegistry;
-import lc.common.resource.ResourceAccess;
+import SGE.SGERuntime;
+import SGE.api.defs.IStructureDefinition;
+import SGE.common.SGELog;
+import SGE.common.impl.registry.StructureRegistry;
+import SGE.common.resource.ResourceAccess;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.MapGenStructure;
 import net.minecraft.world.gen.structure.StructureStart;
 
 /**
- * LanteaCraft feature map generator class.
+ * SG Evolution feature map generator class.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public final class LCFeatureGenerator extends MapGenStructure {
+public final class SGEFeatureGenerator extends MapGenStructure {
 	private final StructureRegistry registry;
 
 	/** Default constructor */
-	public LCFeatureGenerator() {
-		registry = (StructureRegistry) LCRuntime.runtime.registries().structures();
+	public SGEFeatureGenerator() {
+		registry = (StructureRegistry) SGERuntime.runtime.registries().structures();
 	}
 
 	/**
@@ -34,7 +34,7 @@ public final class LCFeatureGenerator extends MapGenStructure {
 	 *            The parameters
 	 */
 	@SuppressWarnings("rawtypes")
-	public LCFeatureGenerator(Map params) {
+	public SGEFeatureGenerator(Map params) {
 		this();
 	}
 
@@ -67,7 +67,7 @@ public final class LCFeatureGenerator extends MapGenStructure {
 				if (ctr != null)
 					return ctr.newInstance(worldObj, rand, cx, cz);
 			} catch (Throwable t) {
-				LCLog.fatal("Couldn't initialize new structure start for type %s.", def.getName(), t);
+				SGELog.fatal("Couldn't initialize new structure start for type %s.", def.getName(), t);
 
 			}
 		return null;
