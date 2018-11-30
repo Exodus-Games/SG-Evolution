@@ -1,8 +1,8 @@
-package lc.common.base.generation.scattered;
+package SGE.common.base.generation.scattered;
 
 import java.util.Random;
 
-import lc.common.util.math.Vector3;
+import SGE.common.util.math.Vector3;
 import net.minecraft.block.Block;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
@@ -10,12 +10,12 @@ import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraft.world.gen.structure.StructureComponent;
 
 /**
- * LanteaCraft scattered feature stub class. Used for the creation of scattered
+ * SG Evolution scattered feature stub class. Used for the creation of scattered
  * structures using addComponentParts.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  */
-public abstract class LCScatteredFeature extends StructureComponent {
+public abstract class SGEScatteredFeature extends StructureComponent {
 
 	/** The size of the bounding box for this feature in the X axis */
 	protected int scatteredFeatureSizeX;
@@ -27,7 +27,7 @@ public abstract class LCScatteredFeature extends StructureComponent {
 	protected int hPos = -1;
 
 	/** Default constructor. */
-	public LCScatteredFeature() {
+	public SGEScatteredFeature() {
 		coordBaseMode = 0;
 	}
 
@@ -49,7 +49,7 @@ public abstract class LCScatteredFeature extends StructureComponent {
 	 * @param sz
 	 *            The size on the z-axis
 	 */
-	protected LCScatteredFeature(Random rng, int x, int y, int z, int sx, int sy, int sz) {
+	protected SGEScatteredFeature(Random rng, int x, int y, int z, int sx, int sy, int sz) {
 		super(0);
 		coordBaseMode = 0;
 		scatteredFeatureSizeX = sx;
