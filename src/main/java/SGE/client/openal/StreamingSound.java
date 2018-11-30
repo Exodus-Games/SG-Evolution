@@ -7,14 +7,14 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 import paulscode.sound.SoundSystem;
-import lc.api.audio.streaming.ISound;
-import lc.api.audio.streaming.ISoundPosition;
-import lc.api.audio.streaming.ISoundProperties;
-import lc.api.audio.streaming.ISoundServer;
-import lc.client.openal.io.StreamingSoundProtocolHandler;
-import lc.common.LCLog;
-import lc.common.resource.ResourceAccess;
-import lc.common.util.math.Vector3;
+import SGE.api.audio.streaming.ISound;
+import SGE.api.audio.streaming.ISoundPosition;
+import SGE.api.audio.streaming.ISoundProperties;
+import SGE.api.audio.streaming.ISoundServer;
+import SGE.client.openal.io.StreamingSoundProtocolHandler;
+import SGE.common.SGELog;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.util.math.Vector3;
 
 public class StreamingSound implements ISound, Comparable<StreamingSound> {
 
