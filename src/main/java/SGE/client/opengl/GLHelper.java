@@ -1,11 +1,11 @@
-package lc.client.opengl;
+package SGE.client.opengl;
 
 import org.lwjgl.opengl.GL11;
 
 /**
  * OpenGL helpers.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class GLHelper {
