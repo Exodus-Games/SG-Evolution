@@ -1,9 +1,9 @@
-package lc.api.components;
+package SGE.api.components;
 
 /**
  * Interoperability type list
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum InteroperabilityType {
