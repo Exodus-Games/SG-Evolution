@@ -1,13 +1,13 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.components;
+package SGE.api.components;
 
 /**
  * Registry container interface
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IRegistryContainer {
