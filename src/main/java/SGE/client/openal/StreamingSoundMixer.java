@@ -1,12 +1,12 @@
-package lc.client.openal;
+package SGE.client.openal;
 
 import java.util.HashMap;
 
-import lc.api.audio.ISoundController;
-import lc.api.audio.channel.ChannelDescriptor;
-import lc.api.audio.channel.IMixer;
-import lc.api.audio.streaming.ISound;
-import lc.common.util.java.DestructableReference;
+import SGE.api.audio.ISoundController;
+import SGE.api.audio.channel.ChannelDescriptor;
+import SGE.api.audio.channel.IMixer;
+import SGE.api.audio.streaming.ISound;
+import SGE.common.util.java.DestructableReference;
 
 public class StreamingSoundMixer implements IMixer {
 
