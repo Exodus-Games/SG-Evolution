@@ -4,9 +4,9 @@ import SGE.api.defs.IDefinitionReference;
 import SGE.api.rendering.IBlockRenderInfo;
 import SGE.api.rendering.IBlockSkinnable;
 import SGE.api.rendering.IRenderInfo;
-import SGE.common.base.LCBlock;
-import SGE.common.base.LCBlockRenderer;
-import SGE.common.base.LCTile;
+import SGE.common.base.SGEBlock;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.base.SGETile;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.impl.registry.DefinitionReference;
 import SGE.common.util.game.BlockContainerProxy;
@@ -58,7 +58,7 @@ public class DefaultBlockRenderer extends SGEBlockRenderer {
 
 	@Override
 	public boolean renderWorldBlock(Block block, RenderBlocks renderer, IBlockAccess world, int x, int y, int z) {
-		if (!(block instanceof LCBlock))
+		if (!(block instanceof SGEBlock))
 			return false;
 		SGEBlock theBlock = (SGEBlock) block;
 		IBlockRenderInfo info = null;
@@ -99,7 +99,7 @@ public class DefaultBlockRenderer extends SGEBlockRenderer {
 		return true;
 	}
 
-	private Trans3 preRenderInWorld(LCBlock block, IBlockRenderInfo info, IBlockAccess world, RenderBlocks renderer,
+	private Trans3 preRenderInWorld(SGEBlock block, IBlockRenderInfo info, IBlockAccess world, RenderBlocks renderer,
 			Trans3 trans, int x, int y, int z) {
 		if (block.canRotate()) {
 			ForgeDirection rotation = block.getRotation(world, x, y, z);
