@@ -1,18 +1,18 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.jit;
+package SGE.api.jit;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import lc.api.components.IntegrationType;
+import SGE.api.components.IntegrationType;
 
 /**
  * Device driver annotations and markers for at-runtime use.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class DeviceDrivers {
@@ -20,7 +20,7 @@ public class DeviceDrivers {
 	/**
 	 * Annotation for classes which act as drivers at runtime.
 	 *
-	 * @author AfterLifeLochie
+	 * @author Exodus Games
 	 *
 	 */
 	@Retention(RetentionPolicy.RUNTIME)
@@ -52,7 +52,7 @@ public class DeviceDrivers {
 	/**
 	 * Annotation for methods which should be called on internal event firing.
 	 *
-	 * @author AfterLifeLochie
+	 * @author Exodus Games
 	 *
 	 */
 	@Retention(RetentionPolicy.RUNTIME)
