@@ -1,8 +1,8 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.components;
+package SGE.api.components;
 
 import java.util.EnumSet;
 
@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Loader;
 /**
  * Driver list and wrapper class
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum DriverMap {
@@ -104,7 +104,7 @@ public enum DriverMap {
 				if (Loader.isModLoaded(mapping.modId))
 					map.add(mapping);
 				else
-					LCLog.debug("Not loading driver %s", mapping);
+					SGELog.debug("Not loading driver %s", mapping);
 		return map;
 	}
 
