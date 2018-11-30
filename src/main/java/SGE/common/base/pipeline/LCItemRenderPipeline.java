@@ -1,50 +1,50 @@
-package lc.common.base.pipeline;
+package SGE.common.base.pipeline;
 
-import lc.LCRuntime;
-import lc.api.defs.ILanteaCraftRenderer;
-import lc.common.LCLog;
-import lc.common.base.LCItemRenderer;
-import lc.common.base.LCTileRenderer;
-import lc.common.impl.registry.DefinitionRegistry;
-import lc.common.impl.registry.DefinitionRegistry.RendererType;
+import SGE.SGERuntime;
+import SGE.api.defs.ISGEvolutionRenderer;
+import SGE.common.SGELog;
+import SGE.common.base.SGEItemRenderer;
+import SGE.common.base.SGETileRenderer;
+import SGE.common.impl.registry.DefinitionRegistry;
+import SGE.common.impl.registry.DefinitionRegistry.RendererType;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 
 /**
  * Item rendering hook.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class LCItemRenderPipeline implements IItemRenderer {
+public class SGEItemRenderPipeline implements IItemRenderer {
 
 	private DefinitionRegistry registry;
 
 	/**
 	 * Create a new rendering hook.
 	 */
-	public LCItemRenderPipeline() {
+	public SGEItemRenderPipeline() {
 		registry = (DefinitionRegistry) LCRuntime.runtime.registries().definitions();
 	}
 
 	@Override
 	public boolean handleRenderType(ItemStack item, ItemRenderType type) {
 		boolean flag = true;
-		ILanteaCraftRenderer worker = registry.getRendererFor(RendererType.ITEM, item.getItem().getClass());
-		if (worker == null && !(worker instanceof LCItemRenderer))
+		ISGEvolutionRenderer worker = registry.getRendererFor(RendererType.ITEM, item.getItem().getClass());
+		if (worker == null && !(worker instanceof SGEItemRenderer))
 			flag = false;
 		else
 			try {
-				LCItemRenderer itemRenderer = (LCItemRenderer) worker;
+				SGEItemRenderer itemRenderer = (SGEItemRenderer) worker;
 				while (itemRenderer != null && !itemRenderer.handleRenderType(item, type)) {
 					worker = itemRenderer.getParent();
-					if (worker == null || !(worker instanceof LCTileRenderer)) {
+					if (worker == null || !(worker instanceof SGETileRenderer)) {
 						flag = false;
 						break;
 					}
 				}
 			} catch (Throwable t) {
-				LCLog.warn("Uncaught item rendering exception.", t);
+				SGELog.warn("Uncaught item rendering exception.", t);
 				flag = false;
 			}
 		return flag;
@@ -53,12 +53,12 @@ public class LCItemRenderPipeline implements IItemRenderer {
 	@Override
 	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper) {
 		boolean flag = true;
-		ILanteaCraftRenderer worker = registry.getRendererFor(RendererType.ITEM, item.getItem().getClass());
-		if (worker == null && !(worker instanceof LCItemRenderer))
+		ISGEvolutionRenderer worker = registry.getRendererFor(RendererType.ITEM, item.getItem().getClass());
+		if (worker == null && !(worker instanceof SGEItemRenderer))
 			flag = false;
 		else
 			try {
-				LCItemRenderer itemRenderer = (LCItemRenderer) worker;
+				SGEItemRenderer itemRenderer = (SGEItemRenderer) worker;
 				while (itemRenderer != null && !itemRenderer.shouldUseRenderHelper(type, item, helper)) {
 					worker = itemRenderer.getParent();
 					if (worker == null || !(worker instanceof LCTileRenderer)) {
@@ -67,7 +67,7 @@ public class LCItemRenderPipeline implements IItemRenderer {
 					}
 				}
 			} catch (Throwable t) {
-				LCLog.warn("Uncaught item rendering exception.", t);
+				SGELog.warn("Uncaught item rendering exception.", t);
 				flag = false;
 			}
 		return flag;
@@ -75,17 +75,17 @@ public class LCItemRenderPipeline implements IItemRenderer {
 
 	@Override
 	public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-		ILanteaCraftRenderer worker = registry.getRendererFor(RendererType.ITEM, item.getItem().getClass());
-		if (worker != null && worker instanceof LCItemRenderer)
+		ISGEvolutionRenderer worker = registry.getRendererFor(RendererType.ITEM, item.getItem().getClass());
+		if (worker != null && worker instanceof SGEItemRenderer)
 			try {
-				LCItemRenderer itemRenderer = (LCItemRenderer) worker;
+				SGEItemRenderer itemRenderer = (SGEItemRenderer) worker;
 				while (itemRenderer != null && !itemRenderer.renderItem(type, item, data)) {
 					worker = itemRenderer.getParent();
-					if (worker == null || !(worker instanceof LCTileRenderer))
+					if (worker == null || !(worker instanceof SGETileRenderer))
 						break;
 				}
 			} catch (Throwable t) {
-				LCLog.warn("Uncaught item rendering exception.", t);
+				SGELog.warn("Uncaught item rendering exception.", t);
 			}
 	}
 }
