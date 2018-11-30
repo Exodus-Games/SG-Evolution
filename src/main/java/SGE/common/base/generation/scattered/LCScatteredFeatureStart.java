@@ -6,7 +6,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.StructureStart;
 
 /**
- * LanteaCraft scattered feature start. You should create and generate
+ * SG Evolution scattered feature start. You should create and generate
  * components here.
  *
  * @author Exodus Games
