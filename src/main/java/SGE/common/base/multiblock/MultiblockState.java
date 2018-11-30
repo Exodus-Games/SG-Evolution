@@ -1,9 +1,9 @@
-package lc.common.base.multiblock;
+package SGE.common.base.multiblock;
 
 /**
  * Multi-block state list
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum MultiblockState {
