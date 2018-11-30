@@ -1,13 +1,13 @@
 package SGE.client.models;
 
 import static SGE.client.opengl.GLHelper.pushTexVertex;
-import lc.client.opengl.BufferDisplayList;
-import lc.client.render.fabs.tiles.TileStargateBaseRenderer;
-import lc.common.base.pipeline.LCTileRenderPipeline;
-import lc.common.resource.ResourceMap;
-import lc.common.util.data.StateMap;
-import lc.common.util.math.Orientations;
-import lc.tiles.TileStargateBase;
+import SGE.client.opengl.BufferDisplayList;
+import SGE.client.render.fabs.tiles.TileStargateBaseRenderer;
+import SGE.common.base.pipeline.SGETileRenderPipeline;
+import SGE.common.resource.ResourceMap;
+import SGE.common.util.data.StateMap;
+import SGE.common.util.math.Orientations;
+import SGE.tiles.TileStargateBase;
 
 import org.lwjgl.opengl.GL11;
 
