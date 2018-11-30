@@ -1,11 +1,11 @@
-package lc.api.components;
+package SGE.api.components;
 
-import lc.api.defs.IStructureDefinition;
+import SGE.api.defs.IStructureDefinition;
 
 /**
  * Structure registry interface. Stores all declared structures at runtime.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IStructureRegistry {
