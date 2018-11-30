@@ -2,13 +2,13 @@ package SGE.blocks;
 
 import java.util.List;
 
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.api.world.OreType;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockLanteaAlloy;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.api.world.OreType;
+import SGE.common.base.SGEBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockSGEAlloy;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,13 +17,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
 /**
- * LanteaCraft standard ore block implementation.
+ * SG Evolution standard ore block implementation.
  *
  * @author Exodus Games
  *
  */
-@Definition(name = "blockLanteaAlloy", type = ComponentType.CORE, blockClass = BlockLanteaAlloy.class, itemBlockClass = ItemBlockLanteaAlloy.class)
-public class BlockLanteaAlloy extends SGEBlock {
+@Definition(name = "blockLanteaAlloy", type = ComponentType.CORE, blockClass = BlockSGEAlloy.class, itemBlockClass = ItemBlockSGEAlloy.class)
+public class BlockSGEAlloy extends SGEBlock {
 	private IIcon missing;
 
 	/** Default constructor */
