@@ -1,16 +1,16 @@
-package lc.common.base.ux;
+package SGE.common.base.ux;
 
-import lc.api.stargate.StargateType;
-import lc.common.LCLog;
-import lc.common.resource.ResourceAccess;
-import lc.common.stargate.StargateCharsetHelper;
+import SGE.api.stargate.StargateType;
+import SGE.common.SGELog;
+import SGE.common.resource.ResourceAccess;
+import SGE.common.stargate.StargateCharsetHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Tessellator;
 
 /**
  * Stargate glyph renderer helper
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class StargateGlyphRenderer {
