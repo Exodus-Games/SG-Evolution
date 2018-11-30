@@ -2,9 +2,9 @@ package SGE.client.render.fabs.tiles;
 
 import SGE.client.animation.Animation;
 import SGE.client.models.ModelTransportRing;
-import SGE.common.base.LCTile;
-import SGE.common.base.LCTileRenderer;
-import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.base.SGETile;
+import SGE.common.base.SGETileRenderer;
+import SGE.common.base.pipeline.SGETileRenderPipeline;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.resource.ResourceAccess;
 import SGE.common.util.data.StateMap;
@@ -26,7 +26,7 @@ public class TileTransportRingRenderer extends SGETileRenderer {
 	}
 
 	@Override
-	public LCTileRenderer getParent() {
+	public SGETileRenderer getParent() {
 		// TODO Auto-generated method stub
 		return null;
 	}
