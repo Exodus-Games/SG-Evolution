@@ -1,4 +1,4 @@
-package lc.api.rendering;
+package SGE.api.rendering;
 
 import net.minecraft.world.World;
 
