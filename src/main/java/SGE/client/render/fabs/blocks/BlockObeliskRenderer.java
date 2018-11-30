@@ -5,9 +5,9 @@ import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
-import lc.client.render.fabs.DefaultBlockRenderer;
-import lc.common.base.LCBlockRenderer;
-import lc.common.configuration.xml.ComponentConfig;
+import SGE.client.render.fabs.DefaultBlockRenderer;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.configuration.xml.ComponentConfig;
 
 /**
  * Obelisk block renderer implementation
@@ -24,7 +24,7 @@ public class BlockObeliskRenderer extends SGEBlockRenderer {
 	}
 
 	@Override
-	public Class<? extends LCBlockRenderer> getParent() {
+	public Class<? extends SGEBlockRenderer> getParent() {
 		return DefaultBlockRenderer.class;
 	}
 
