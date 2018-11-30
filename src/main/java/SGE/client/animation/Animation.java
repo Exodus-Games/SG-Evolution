@@ -1,17 +1,17 @@
-package lc.client.animation;
+package SGE.client.animation;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
 
-import lc.common.util.data.StateMap;
-import lc.common.util.game.RunnableTileCallback;
+import SGE.common.util.data.StateMap;
+import SGE.common.util.game.RunnableTileCallback;
 
 /**
  * Animation controller class. Allows the rendering engine to declare animations
  * which modify multiple double-based properties over a given time between a set
  * of given values, under a particular interpolation mode.
  * 
- * @author AfterLifeLochie
+ * @author Exouds Games
  *
  */
 public abstract class Animation {
@@ -19,7 +19,7 @@ public abstract class Animation {
 	/**
 	 * The tween interpolation mode.
 	 * 
-	 * @author AfterLifeLochie
+	 * @author Exodus Games
 	 *
 	 */
 	public static enum InterpolationMode {
