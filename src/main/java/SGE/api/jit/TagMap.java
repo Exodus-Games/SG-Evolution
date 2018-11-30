@@ -1,4 +1,4 @@
-package lc.api.jit;
+package SGE.api.jit;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;
@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
  * parameters, constructors and local variables in order to contain a list of
  * tags.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Target({ TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE })
