@@ -1,32 +1,32 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api;
+package SGE.api;
 
 /**
  * <p>
- * LanteaCraft's main API access class. Use this class to get a reference to the
- * LanteaCraft mod at runtime.
+ * SG Evolution's main API access class. Use this class to get a reference to the
+ * SG Evolution mod at runtime.
  * </p>
  * <p>
  * <b>Do not use reflection or other methods to access the runtime instance of
  * the mod.</b>
  * </p>
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class LCAPI {
+public class SGEAPI {
 
 	/** Runtime cache container */
-	private static ILCAPIProxy runtime = null;
+	private static ISGEAPIProxy runtime = null;
 
 	/**
 	 * <p>
-	 * Fetch the current LanteaCraft API runtime element. If LanteaCraft has
+	 * Fetch the current SG Evolution API runtime element. If SG Evolution has
 	 * been loaded by FML, this will return the current API runtime access
-	 * instance. If LanteaCraft has not been loaded, this will return null.
+	 * instance. If SG Evolution has not been loaded, this will return null.
 	 * </p>
 	 *
 	 * <p>
@@ -34,13 +34,13 @@ public class LCAPI {
 	 * of the mod.</b>
 	 * </p>
 	 *
-	 * @return The current LanteaCraft API runtime.
+	 * @return The current SG Evolution API runtime.
 	 */
-	public static ILCAPIProxy runtime() {
+	public static ISGEAPIProxy runtime() {
 		if (runtime == null)
 			try {
-				Class<?> rtc = Class.forName("lc.LCRuntime");
-				runtime = (ILCAPIProxy) rtc.getField("runtime").get(rtc);
+				Class<?> rtc = Class.forName("SGE.SGERuntime");
+				runtime = (ISGEAPIProxy) rtc.getField("runtime").get(rtc);
 			} catch (Throwable e) {
 				return null;
 			}
