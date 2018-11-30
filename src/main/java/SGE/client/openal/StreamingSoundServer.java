@@ -1,4 +1,4 @@
-package lc.client.openal;
+package SGE.client.openal;
 
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
@@ -18,11 +18,11 @@ import net.minecraft.client.audio.SoundManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.client.event.sound.SoundLoadEvent;
 import net.minecraftforge.common.MinecraftForge;
-import lc.api.audio.streaming.ISound;
-import lc.api.audio.streaming.ISoundPosition;
-import lc.api.audio.streaming.ISoundProperties;
-import lc.api.audio.streaming.ISoundServer;
-import lc.common.LCLog;
+import SGE.api.audio.streaming.ISound;
+import SGE.api.audio.streaming.ISoundPosition;
+import SGE.api.audio.streaming.ISoundProperties;
+import SGE.api.audio.streaming.ISoundServer;
+import SGE.common.SGELog;
 
 public class StreamingSoundServer implements ISoundServer {
 
