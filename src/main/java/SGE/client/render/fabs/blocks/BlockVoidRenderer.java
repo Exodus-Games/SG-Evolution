@@ -1,8 +1,8 @@
 package SGE.client.render.fabs.blocks;
 
 import SGE.api.rendering.IBlockRenderInfo;
-import SGE.common.base.LCBlock;
-import SGE.common.base.LCBlockRenderer;
+import SGE.common.base.SGEBlock;
+import SGE.common.base.SGEBlockRenderer;
 import SGE.common.configuration.xml.ComponentConfig;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
