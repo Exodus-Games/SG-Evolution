@@ -1,4 +1,4 @@
-package lc.client.opengl;
+package SGE.client.opengl;
 
 import net.minecraft.client.particle.EntityFX;
 import net.minecraft.util.ResourceLocation;
@@ -7,10 +7,10 @@ import net.minecraft.world.World;
 /**
  * LanteaCraft GFX entity stub
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public abstract class LCEntityFX extends EntityFX {
+public abstract class SGEEntityFX extends EntityFX {
 
 	/**
 	 * Default constructor; create a fixed-point entity effect with no movement.
@@ -24,7 +24,7 @@ public abstract class LCEntityFX extends EntityFX {
 	 * @param z
 	 *            The z-coordinate of the entity
 	 */
-	protected LCEntityFX(World world, double x, double y, double z) {
+	protected SGEEntityFX(World world, double x, double y, double z) {
 		super(world, x, y, z, 0.0d, 0.0d, 0.0d);
 	}
 
@@ -46,7 +46,7 @@ public abstract class LCEntityFX extends EntityFX {
 	 * @param mz
 	 *            The movement z-speed of the entity
 	 */
-	protected LCEntityFX(World world, double x, double y, double z, double mx, double my, double mz) {
+	protected SGEEntityFX(World world, double x, double y, double z, double mx, double my, double mz) {
 		super(world, x, y, z, mx, my, mz);
 		this.motionX = mx;
 		this.motionY = my;
