@@ -1,6 +1,6 @@
 package SGE.client.render.gfx.particle;
 
-import SGE.client.opengl.LCEntityFX;
+import SGE.client.opengl.SGEEntityFX;
 import SGE.common.resource.ResourceAccess;
 
 import org.lwjgl.opengl.GL11;
@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
-public class GFXDust extends LCEntityFX {
+public class GFXDust extends SGEEntityFX {
 
 	private int particle = 0;
 	private boolean flip = false;
