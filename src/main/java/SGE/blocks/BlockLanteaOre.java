@@ -3,14 +3,14 @@ package SGE.blocks;
 import java.util.List;
 import java.util.Random;
 
-import lc.LCRuntime;
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.api.world.OreType;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockLanteaOre;
+import SGE.SGERuntime;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.api.world.OreType;
+import SGE.common.base.SGEBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockSGEOre;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -24,12 +24,12 @@ import net.minecraft.util.IIcon;
  * @author Exodus Games
  *
  */
-@Definition(name = "blockLanteaOre", type = ComponentType.CORE, blockClass = BlockLanteaOre.class, itemBlockClass = ItemBlockLanteaOre.class)
-public class BlockLanteaOre extends SGEBlock {
+@Definition(name = "blockLanteaOre", type = ComponentType.CORE, blockClass = BlockSGEOre.class, itemBlockClass = ItemBlockSGEOre.class)
+public class BlockSGEOre extends SGEBlock {
 	private IIcon missing;
 
 	/** Default constructor */
-	public BlockLanteaOre() {
+	public BlockSGEOre() {
 		super(Material.ground);
 		setHardness(5.0F);
 		setResistance(10.0F);
@@ -57,7 +57,7 @@ public class BlockLanteaOre extends SGEBlock {
 
 	@Override
 	public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_) {
-		return SGERuntime.runtime.items().lanteaOreItem.getItem();
+		return SGERuntime.runtime.items().SGEOreItem.getItem();
 	}
 
 	@Override
