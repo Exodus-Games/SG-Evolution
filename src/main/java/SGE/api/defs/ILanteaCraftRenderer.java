@@ -1,16 +1,16 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 /**
  * Generic contract interface for all renderers
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public interface ILanteaCraftRenderer extends IGameDef {
+public interface ISGEvolutionRenderer extends IGameDef {
 
 	/* No contract elements */
 
