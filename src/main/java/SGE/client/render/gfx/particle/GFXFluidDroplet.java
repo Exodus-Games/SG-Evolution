@@ -7,7 +7,7 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
-public class GFXFluidDroplet extends LCEntityFX {
+public class GFXFluidDroplet extends SGEEntityFX {
 
 	private Material materialType;
 	private int bobTimer;
