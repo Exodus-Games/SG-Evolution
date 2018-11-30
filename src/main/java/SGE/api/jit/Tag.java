@@ -1,4 +1,4 @@
-package lc.api.jit;
+package SGE.api.jit;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;
@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
  * transformer is soley responsible for scanning and interpreting the values of
  * the Tags it supports.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Target({ TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE })
