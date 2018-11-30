@@ -1,8 +1,8 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Hint provider class marker
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 @Retention(RetentionPolicy.RUNTIME)
