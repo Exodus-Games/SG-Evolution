@@ -1,15 +1,15 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 /**
  * Acts as a container for a reference to a formal game definition. Used
  * particularly when code is reliant on a definition being formalized earlier
  * than formalization actually occurs.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IDefinitionReference {
