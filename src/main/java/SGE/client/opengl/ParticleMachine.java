@@ -1,4 +1,4 @@
-package lc.client.opengl;
+package SGE.client.opengl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,16 +25,16 @@ import net.minecraftforge.common.MinecraftForge;
 /**
  * Client-side particle on-demand rendering system
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ParticleMachine implements ITickEventHandler, IParticleMachine {
 
-	private HashMap<Integer, HashMap<Integer, ArrayList<LCEntityFX>>> particles;
+	private HashMap<Integer, HashMap<Integer, ArrayList<SGEEntityFX>>> particles;
 
 	/** Default constructor */
 	public ParticleMachine() {
-		LCRuntime.runtime.ticks().register(this);
+		SGERuntime.runtime.ticks().register(this);
 		MinecraftForge.EVENT_BUS.register(this);
 		particles = new HashMap<Integer, HashMap<Integer, ArrayList<LCEntityFX>>>();
 		for (int i = 0; i < 4; i++)
@@ -66,8 +66,8 @@ public class ParticleMachine implements ITickEventHandler, IParticleMachine {
 		for (int layer = 0; layer < 4; layer++) {
 			HashMap<Integer, ArrayList<LCEntityFX>> objects = particles.get(layer);
 			if (objects.containsKey(dimension)) {
-				ArrayList<LCEntityFX> entities = objects.get(dimension);
-				Iterator<LCEntityFX> iter = entities.iterator();
+				ArrayList<SGEEntityFX> entities = objects.get(dimension);
+				Iterator<SGEEntityFX> iter = entities.iterator();
 				while (iter.hasNext()) {
 					EntityFX entity = iter.next();
 					if (entity != null) {
