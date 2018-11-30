@@ -8,7 +8,7 @@ import SGE.api.rendering.IParticleMachine;
 import SGE.blocks.BlockBrazier;
 import SGE.blocks.BlockConfigurator;
 import SGE.blocks.BlockDHD;
-import SGE.blocks.BlockLanteaDoor;
+import SGE.blocks.BlockSGEDoor;
 import SGE.blocks.BlockObelisk;
 import SGE.client.openal.ClientSoundController;
 import SGE.client.opengl.ParticleMachine;
@@ -24,10 +24,10 @@ import SGE.client.render.fabs.tiles.TileDHDRenderer;
 import SGE.client.render.fabs.tiles.TileDoorRenderer;
 import SGE.client.render.fabs.tiles.TileStargateBaseRenderer;
 import SGE.client.render.fabs.tiles.TileTransportRingRenderer;
-import SGE.common.LCLog;
-import SGE.common.base.LCBlock;
-import SGE.common.base.LCItem;
-import SGE.common.base.LCTile;
+import SGE.common.SGELog;
+import SGE.common.base.SGEBlock;
+import SGE.common.base.SGEItem;
+import SGE.common.base.SGETile;
 import SGE.common.base.pipeline.LCBlockRenderPipeline;
 import SGE.common.base.pipeline.LCEntityRenderPipeline;
 import SGE.common.base.pipeline.LCItemRenderPipeline;
@@ -38,7 +38,7 @@ import SGE.items.ItemDecorator;
 import SGE.server.HintProviderServer;
 import SGE.tiles.TileConfigurator;
 import SGE.tiles.TileDHD;
-import SGE.tiles.TileLanteaDoor;
+import SGE.tiles.TileSGEDoor;
 import SGE.tiles.TileStargateBase;
 import SGE.tiles.TileTransportRing;
 import net.minecraft.entity.Entity;
@@ -65,7 +65,7 @@ public class HintProviderClient extends HintProviderServer {
 	/** Default constructor */
 	public HintProviderClient() {
 		super();
-		LCLog.debug("HintProviderClient providing client-side hints");
+		SGELog.debug("HintProviderClient providing client-side hints");
 	}
 
 	@Override
