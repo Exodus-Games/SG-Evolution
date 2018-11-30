@@ -1,8 +1,8 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
@@ -13,7 +13,7 @@ import net.minecraft.tileentity.TileEntity;
 /**
  * Game definition container interface
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IContainerDefinition extends IGameDef {
