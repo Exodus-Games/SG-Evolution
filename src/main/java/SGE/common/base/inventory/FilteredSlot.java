@@ -1,7 +1,7 @@
-package lc.common.base.inventory;
+package SGE.common.base.inventory;
 
-import lc.common.base.ux.LCTabbedSlot;
-import lc.common.util.game.SlotFilter;
+import SGE.common.base.ux.SGETabbedSlot;
+import SGE.common.util.game.SlotFilter;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -9,9 +9,9 @@ import net.minecraft.item.ItemStack;
 /**
  * Filtered inventory slot implementation
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  */
-public class FilteredSlot extends LCTabbedSlot {
+public class FilteredSlot extends SGETabbedSlot {
 	private final boolean readonly;
 	private final int slotIndex;
 
