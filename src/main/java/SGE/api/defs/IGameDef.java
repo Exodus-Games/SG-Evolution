@@ -1,14 +1,14 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 /**
  * Global game definition interface; all definitions in the game are
  * quantifiable to exactly one game definition type.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IGameDef {
