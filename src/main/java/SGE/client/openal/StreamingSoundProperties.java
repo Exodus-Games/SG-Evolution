@@ -1,7 +1,7 @@
-package lc.client.openal;
+package SGE.client.openal;
 
-import lc.api.audio.SoundPlaybackChannel;
-import lc.api.audio.streaming.ISoundProperties;
+import SGE.api.audio.SoundPlaybackChannel;
+import SGE.api.audio.streaming.ISoundProperties;
 
 public class StreamingSoundProperties implements ISoundProperties {
 
