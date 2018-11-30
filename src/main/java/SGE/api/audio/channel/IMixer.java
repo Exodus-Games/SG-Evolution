@@ -1,16 +1,16 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.audio.channel;
+package SGE.api.audio.channel;
 
-import lc.api.audio.streaming.ISound;
+import SGE.api.audio.streaming.ISound;
 
 /**
  * Sound mixer contract interface. Allows modded blocks, items and tiles to
  * create and play multiple sounds on virtual channels simultaneously.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IMixer {
