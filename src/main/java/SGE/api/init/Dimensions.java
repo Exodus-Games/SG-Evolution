@@ -1,15 +1,15 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.init;
+package SGE.api.init;
 
-import lc.api.defs.IDimensionDefinition;
+import SGE.api.defs.IDimensionDefinition;
 
 /**
  * Dimension definition list.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class Dimensions {
