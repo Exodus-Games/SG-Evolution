@@ -2,17 +2,17 @@ package SGE.blocks;
 
 import java.util.List;
 
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.api.rendering.IBlockRenderInfo;
-import lc.api.stargate.StargateType;
-import lc.common.base.LCBlock;
-import lc.common.base.LCTile;
-import lc.common.base.multiblock.MultiblockState;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockStargateRing;
-import lc.tiles.TileStargateRing;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.api.rendering.IBlockRenderInfo;
+import SGE.api.stargate.StargateType;
+import SGE.common.base.SGEBlock;
+import SGE.common.base.SGETile;
+import SGE.common.base.multiblock.MultiblockState;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockStargateRing;
+import SGE.tiles.TileStargateRing;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
