@@ -4,9 +4,9 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import SGE.common.base.LCTile;
-import SGE.common.base.LCTileRenderer;
-import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.base.SGETile;
+import SGE.common.base.SGETileRenderer;
+import SGE.common.base.pipeline.SGETileRenderPipeline;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.resource.ResourceAccess;
 import SGE.common.util.math.Orientations;
@@ -29,7 +29,7 @@ public class TileDoorRenderer extends SGETileRenderer {
 	public boolean renderTileEntityAt(SGETile tile, SGETileRenderPipeline renderer, double x, double y, double z,
 			float partialTickTime) {
 
-		TileLanteaDoor door = (TileLanteaDoor) tile;
+		TileLanteaDoor door = (TileSGEDoor) tile;
 		String doorType = (door.getBlockMetadata() != 0) ? "goauld" : "lantean";
 
 		ResourceLocation whatTex = ResourceAccess.getNamedResource(ResourceAccess.formatResourceName(
