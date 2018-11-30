@@ -1,4 +1,4 @@
-package lc.api.jit;
+package SGE.api.jit;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
