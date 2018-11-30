@@ -6,10 +6,10 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.world.IBlockAccess;
-import lc.client.models.ModelLaptop;
-import lc.common.base.LCBlockRenderer;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
+import SGE.client.models.ModelLaptop;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
 
 public class BlockConfiguratorRenderer extends SGEBlockRenderer {
 
