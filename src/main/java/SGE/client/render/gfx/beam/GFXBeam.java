@@ -9,7 +9,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import SGE.client.opengl.LCEntityFX;
+import SGE.client.opengl.SGEEntityFX;
 import SGE.common.resource.ResourceAccess;
 import SGE.common.util.math.Vector3;
 
