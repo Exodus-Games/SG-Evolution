@@ -1,11 +1,11 @@
-package lc.api.jit;
+package SGE.api.jit;
 
 import java.lang.reflect.Method;
 
 /**
  * ASM and reflection-based tag-finding helpers.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ASMTag {
