@@ -1,4 +1,4 @@
-package lc.common.base.ux;
+package SGE.common.base.ux;
 
 import java.awt.Dimension;
 
@@ -7,16 +7,16 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Container tab stub
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  */
-public abstract class LCContainerTab {
+public abstract class SGEContainerTab {
 	/**
 	 * Called by the LCContainerGUI parent when the tab is selected.
 	 *
 	 * @param container
 	 *            The LCContainerGUI parent.
 	 */
-	protected abstract void onTabOpened(LCContainerGUI container);
+	protected abstract void onTabOpened(SGEContainerGUI container);
 
 	/**
 	 * Called by the LCContainerGUI when the tab is deselected.
@@ -24,7 +24,7 @@ public abstract class LCContainerTab {
 	 * @param container
 	 *            The LCContainerGUI parent.
 	 */
-	protected abstract void onTabClosed(LCContainerGUI container);
+	protected abstract void onTabClosed(SGEContainerGUI container);
 
 	/**
 	 * Get an un-translated tab name.
@@ -59,7 +59,7 @@ public abstract class LCContainerTab {
 	 * @param mouseY
 	 *            Mouse y-coord
 	 */
-	protected abstract void drawBackgroundLayer(LCContainerGUI container, float partialTickCount, int mouseX, int mouseY);
+	protected abstract void drawBackgroundLayer(SGEContainerGUI container, float partialTickCount, int mouseX, int mouseY);
 
 	/**
 	 * Draw the foreground layer of the tab.
@@ -71,7 +71,7 @@ public abstract class LCContainerTab {
 	 * @param mouseY
 	 *            Mouse y-coord
 	 */
-	protected abstract void drawForegroundLayer(LCContainerGUI container, int mouseX, int mouseY);
+	protected abstract void drawForegroundLayer(SGEContainerGUI container, int mouseX, int mouseY);
 
 	/**
 	 * Called when the mouse is clicked
@@ -85,7 +85,7 @@ public abstract class LCContainerTab {
 	 * @param mouseButton
 	 *            Which button was clicked
 	 */
-	protected abstract void mouseClicked(LCContainerGUI container, int x, int y, int mouseButton);
+	protected abstract void mouseClicked(SGEContainerGUI container, int x, int y, int mouseButton);
 
 	/**
 	 * Called when the mouse is released
@@ -99,7 +99,7 @@ public abstract class LCContainerTab {
 	 * @param mouseButton
 	 *            Which button was released
 	 */
-	protected abstract void mouseMovedOrUp(LCContainerGUI container, int x, int y, int mouseButton);
+	protected abstract void mouseMovedOrUp(SGEContainerGUI container, int x, int y, int mouseButton);
 
 	/**
 	 * Called when a key is typed
@@ -111,7 +111,7 @@ public abstract class LCContainerTab {
 	 * @param key
 	 *            The key number
 	 */
-	protected abstract void keyTyped(LCContainerGUI container, char c, int key);
+	protected abstract void keyTyped(SGEContainerGUI container, char c, int key);
 
 	/**
 	 * Called to tick the tab
@@ -119,5 +119,5 @@ public abstract class LCContainerTab {
 	 * @param container
 	 *            The container
 	 */
-	protected abstract void update(LCContainerGUI container);
+	protected abstract void update(SGEContainerGUI container);
 }
