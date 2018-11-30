@@ -1,7 +1,7 @@
 package SGE.client.render.animations;
 
 import SGE.client.animation.Animation;
-import SGE.common.base.LCTile;
+import SGE.common.base.SGETile;
 import SGE.common.util.game.RunnableTileCallback;
 
 /**
@@ -29,7 +29,7 @@ public class ChevronMoveAnimation extends Animation {
 	public ChevronMoveAnimation(double time, int whichChevron, double newPos, double newLight, boolean resample) {
 		super(time, resample, new RunnableTileCallback() {
 			@Override
-			public void run(LCTile tile) {
+			public void run(SGETile tile) {
 				tile.mixer().replayChannel("lock");
 			}
 		}, null);
