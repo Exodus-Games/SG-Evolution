@@ -1,18 +1,18 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import net.minecraft.entity.Entity;
-import lc.api.components.ComponentType;
-import lc.common.base.LCBlock;
-import lc.common.base.LCItem;
-import lc.common.base.LCItemBlock;
-import lc.common.base.LCTile;
+import SGE.api.components.ComponentType;
+import SGE.common.base.SGEBlock;
+import SGE.common.base.SGEItem;
+import SGE.common.base.SGEItemBlock;
+import SGE.common.base.SGETile;
 
 /**
  * <p>
@@ -21,7 +21,7 @@ import lc.common.base.LCTile;
  * transformed into definitions which LanteaCraft can interpret.
  * </p>
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Definition {
