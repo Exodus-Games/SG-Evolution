@@ -1,11 +1,11 @@
-package lc.api.jit;
+package SGE.api.jit;
 
 /**
  * Represents a predicate (boolean-valued function) of any number of untyped or
  * typed arguments. This is a functional interface whose functional method is
  * test(Object[]).
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  */
 public interface AnyPredicate {
 
