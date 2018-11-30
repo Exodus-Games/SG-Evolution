@@ -1,14 +1,14 @@
 package SGE.client.render.animations;
 
 import net.minecraft.world.World;
-import lc.LCRuntime;
-import lc.client.animation.Animation;
-import lc.client.render.gfx.particle.GFXDust;
-import lc.common.base.LCTile;
-import lc.common.util.data.StateMap;
-import lc.common.util.game.RunnableTileCallback;
-import lc.common.util.math.Vector3;
-import lc.tiles.TileStargateBase;
+import SGE.SGERuntime;
+import SGE.client.animation.Animation;
+import SGE.client.render.gfx.particle.GFXDust;
+import SGE.common.base.SGETile;
+import SGE.common.util.data.StateMap;
+import SGE.common.util.game.RunnableTileCallback;
+import SGE.common.util.math.Vector3;
+import SGE.tiles.TileStargateBase;
 
 public class RingSpinAnimation extends Animation {
 
@@ -29,7 +29,7 @@ public class RingSpinAnimation extends Animation {
 			}
 		}, new RunnableTileCallback() {
 			@Override
-			public void run(LCTile tile) {
+			public void run(SGETile tile) {
 				tile.mixer().stopChannel("spin");
 			}
 		});
