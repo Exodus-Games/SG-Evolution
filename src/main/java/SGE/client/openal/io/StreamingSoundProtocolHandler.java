@@ -1,4 +1,4 @@
-package lc.client.openal.io;
+package SGE.client.openal.io;
 
 import java.net.URL;
 import java.net.URLConnection;
