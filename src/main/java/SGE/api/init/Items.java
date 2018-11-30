@@ -2,37 +2,37 @@
  * This file is part of the official LanteaCraft API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.init;
+package SGE.api.init;
 
-import lc.api.defs.IContainerDefinition;
+import SGE.api.defs.IContainerDefinition;
 
 /**
  * Item definition list
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class Items {
 	/** Debugging glasses */
 	public IContainerDefinition glasses;
 	/** Lantea global ore item */
-	public IContainerDefinition lanteaOreItem;
+	public IContainerDefinition SGEOreItem;
 	/** Lantea global alloy ingot item */
-	public IContainerDefinition lanteaAlloyItem;
+	public IContainerDefinition SGEAlloyItem;
 	/** Lantea global crystal item */
-	public IContainerDefinition lanteaCraftingItem;
+	public IContainerDefinition SGECraftingItem;
 
 	/** Stargate iris item */
-	public IContainerDefinition lanteaStargateIris;
+	public IContainerDefinition SGEStargateIris;
 
 	/** Lantea decorator tool */
-	public IContainerDefinition lanteaDecoratorTool;
+	public IContainerDefinition SGEDecoratorTool;
 
 	/** Transport ring activator */
-	public IContainerDefinition lanteaTransportRingActivator;
+	public IContainerDefinition SGETransportRingActivator;
 
 	/** Portable DHD */
-	public IContainerDefinition lanteaPortableDHD;
+	public IContainerDefinition SGEPortableDHD;
 
 	/** Staff weapon */
 	public IContainerDefinition goauldStaffWeapon;

@@ -2,14 +2,14 @@
  * This file is part of the official LanteaCraft API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.init;
+package SGE.api.init;
 
-import lc.api.defs.IRecipeDefinition;
+import SGE.api.defs.IRecipeDefinition;
 
 /**
  * Recipe definition list
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class Recipes {
