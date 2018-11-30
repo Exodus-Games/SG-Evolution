@@ -1,8 +1,8 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.audio.streaming;
+package SGE.api.audio.streaming;
 
 /**
  * Contract interface for objects which are to act as sound-streams.
