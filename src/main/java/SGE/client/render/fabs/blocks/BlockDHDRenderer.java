@@ -5,10 +5,10 @@ import org.lwjgl.opengl.GL11;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.world.IBlockAccess;
-import lc.api.stargate.StargateType;
-import lc.client.models.ModelDHD;
-import lc.common.base.LCBlockRenderer;
-import lc.common.configuration.xml.ComponentConfig;
+import SGE.api.stargate.StargateType;
+import SGE.client.models.ModelDHD;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.configuration.xml.ComponentConfig;
 
 /**
  * Stargate DHD block renderer
