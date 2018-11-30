@@ -1,9 +1,9 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 /**
  * Iris type list.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum IrisType {

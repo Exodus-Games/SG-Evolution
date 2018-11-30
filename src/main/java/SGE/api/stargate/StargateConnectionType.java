@@ -1,9 +1,9 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 /**
  * Stargate connection types
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum StargateConnectionType {

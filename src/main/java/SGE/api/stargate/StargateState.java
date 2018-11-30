@@ -1,4 +1,4 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 public enum StargateState {
 	/** Nothing is happening */

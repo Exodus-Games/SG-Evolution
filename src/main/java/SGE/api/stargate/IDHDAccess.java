@@ -1,9 +1,9 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 /**
  * DHD access interface.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IDHDAccess {

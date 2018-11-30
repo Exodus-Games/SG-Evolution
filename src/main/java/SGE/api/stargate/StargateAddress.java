@@ -1,4 +1,4 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 import net.minecraft.nbt.NBTTagCompound;
 import lc.common.stargate.StargateCharsetHelper;

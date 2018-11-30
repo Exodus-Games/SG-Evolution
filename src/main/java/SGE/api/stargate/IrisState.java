@@ -1,9 +1,9 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 /**
  * Iris state enumeration
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public enum IrisState {

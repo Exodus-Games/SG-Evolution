@@ -1,9 +1,9 @@
-package lc.api.stargate;
+package SGE.api.stargate;
 
 /**
  * Contract interface for Stargate access.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IStargateAccess {
