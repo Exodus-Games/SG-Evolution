@@ -1,6 +1,6 @@
 package SGE.client.render.gfx.particle;
 
-import SGE.client.opengl.LCEntityFX;
+import SGE.client.opengl.SGEEntityFX;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.MathHelper;
