@@ -12,7 +12,7 @@ import net.minecraft.world.gen.structure.MapGenStructure;
 import net.minecraft.world.gen.structure.StructureStart;
 
 /**
- * LanteaCraft scattered feature map generator class.
+ * SG Evolution scattered feature map generator class.
  *
  * @author Exodus Games
  *
@@ -31,7 +31,7 @@ public final class SGEScatteredFeatureGenerator extends MapGenStructure {
 	}
 
 	private IStructureDefinition findStructureStart(int x, int z) {
-		IStructureDefinition[] defs = registry.allDefs(LCScatteredFeatureStart.class);
+		IStructureDefinition[] defs = registry.allDefs(SGEScatteredFeatureStart.class);
 		for (IStructureDefinition def : defs)
 			if (def.canGenerateAt(worldObj, rand, x, z))
 				return def;
