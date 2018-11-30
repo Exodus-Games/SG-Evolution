@@ -1,10 +1,10 @@
-package lc.api.jit;
+package SGE.api.jit;
 
 /**
  * Represents a predicate (boolean-valued function) of multiple arguments. This
  * is a functional interface whose functional method is test(Object[]).
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  * @param <T>
  *            the type of the input(s) to the predicate
