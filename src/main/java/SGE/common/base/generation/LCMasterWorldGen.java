@@ -1,27 +1,27 @@
-package lc.common.base.generation;
+package SGE.common.base.generation;
 
 import java.util.Random;
 
-import lc.common.LCLog;
-import lc.common.base.generation.scattered.LCScatteredFeatureGenerator;
-import lc.common.base.generation.structure.LCFeatureGenerator;
-import lc.common.util.Tracer;
+import SGE.common.SGELog;
+import SGE.common.base.generation.scattered.SGEScatteredFeatureGenerator;
+import SGE.common.base.generation.structure.SGEFeatureGenerator;
+import SGE.common.util.Tracer;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 /**
- * LanteaCraft world decorator hook.
+ * SG Evolution world decorator hook.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class LCMasterWorldGen implements IWorldGenerator {
+public class SGEMasterWorldGen implements IWorldGenerator {
 
 	/** Scattered feature generator */
-	protected final LCScatteredFeatureGenerator scatteredGenerator = new LCScatteredFeatureGenerator();
+	protected final SGEScatteredFeatureGenerator scatteredGenerator = new SGEScatteredFeatureGenerator();
 	/** Special feature generator */
-	protected final LCFeatureGenerator featureGenerator = new LCFeatureGenerator();
+	protected final SGEFeatureGenerator featureGenerator = new SGEFeatureGenerator();
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator,
@@ -34,7 +34,7 @@ public class LCMasterWorldGen implements IWorldGenerator {
 			Tracer.begin(this, "scattered feature generator allocation");
 			scatteredGenerator.func_151539_a(chunkProvider, world, chunkX, chunkZ, null);
 		} catch (Throwable t) {
-			LCLog.warn("Problem populating scattered features for chunk.", t);
+			SGELog.warn("Problem populating scattered features for chunk.", t);
 		} finally {
 			Tracer.end();
 		}
@@ -42,7 +42,7 @@ public class LCMasterWorldGen implements IWorldGenerator {
 			Tracer.begin(this, "ordered feature generator allocation");
 			featureGenerator.func_151539_a(chunkProvider, world, chunkX, chunkX, null);
 		} catch (Throwable t) {
-			LCLog.warn("Problem populating features for chunk.", t);
+			SGELog.warn("Problem populating features for chunk.", t);
 		} finally {
 			Tracer.end();
 		}
@@ -56,7 +56,7 @@ public class LCMasterWorldGen implements IWorldGenerator {
 			Tracer.begin(this, "scattered feature population");
 			scatteredGenerator.generateStructuresInChunk(world, random, chunkX, chunkZ);
 		} catch (Throwable t) {
-			LCLog.warn("Failed to generate scattered structures.", t);
+			SGELog.warn("Failed to generate scattered structures.", t);
 		} finally {
 			Tracer.end();
 		}
@@ -65,7 +65,7 @@ public class LCMasterWorldGen implements IWorldGenerator {
 				Tracer.begin(this, "ordered feature population");
 				flag = featureGenerator.generateStructuresInChunk(world, random, chunkX, chunkZ);
 			} catch (Throwable t) {
-				LCLog.warn("Failed to generate structures.", t);
+				SGELog.warn("Failed to generate structures.", t);
 			} finally {
 				Tracer.end();
 			}
