@@ -1,4 +1,4 @@
-package lc.common.base.inventory;
+package SGE.common.base.inventory;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 /**
  * Simple inventory stub.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public abstract class BasicInventory implements IInventory {
