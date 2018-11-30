@@ -4,8 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.IBlockAccess;
-import lc.common.base.LCBlockRenderer;
-import lc.common.configuration.xml.ComponentConfig;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.configuration.xml.ComponentConfig;
 
 /**
  * Door block renderer implementation
