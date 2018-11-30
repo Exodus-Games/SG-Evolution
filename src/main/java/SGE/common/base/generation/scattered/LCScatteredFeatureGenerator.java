@@ -1,12 +1,12 @@
-package lc.common.base.generation.scattered;
+package SGE.common.base.generation.scattered;
 
 import java.lang.reflect.Constructor;
 import java.util.Random;
 
-import lc.LCRuntime;
-import lc.api.defs.IStructureDefinition;
-import lc.common.LCLog;
-import lc.common.impl.registry.StructureRegistry;
+import SGE.SGERuntime;
+import SGE.api.defs.IStructureDefinition;
+import SGE.common.SGELog;
+import SGE.common.impl.registry.StructureRegistry;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.MapGenStructure;
 import net.minecraft.world.gen.structure.StructureStart;
@@ -14,15 +14,15 @@ import net.minecraft.world.gen.structure.StructureStart;
 /**
  * LanteaCraft scattered feature map generator class.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public final class LCScatteredFeatureGenerator extends MapGenStructure {
+public final class SGEScatteredFeatureGenerator extends MapGenStructure {
 	private final StructureRegistry registry;
 
 	/** Default constructor */
-	public LCScatteredFeatureGenerator() {
-		registry = (StructureRegistry) LCRuntime.runtime.registries().structures();
+	public SGEScatteredFeatureGenerator() {
+		registry = (StructureRegistry) SGERuntime.runtime.registries().structures();
 	}
 
 	@Override
