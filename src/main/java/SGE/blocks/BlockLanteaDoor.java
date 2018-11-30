@@ -14,13 +14,13 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import lc.LCRuntime;
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.items.ItemLanteaDoor;
-import lc.tiles.TileLanteaDoor;
+import SGE.SGERuntime;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.common.base.SGEBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.items.ItemSGEDoor;
+import SGE.tiles.TileSGEDoor;
 
 /**
  * LanteaCraft door block implementation
@@ -28,13 +28,13 @@ import lc.tiles.TileLanteaDoor;
  * @author Exodus Games
  *
  */
-@Definition(name = "lanteaDoor", type = ComponentType.DECOR, blockClass = BlockLanteaDoor.class, itemBlockClass = ItemLanteaDoor.class, tileClass = TileLanteaDoor.class)
-public class BlockLanteaDoor extends SGEBlock {
+@Definition(name = "SGEDoor", type = ComponentType.DECOR, blockClass = BlockSGEDoor.class, itemBlockClass = ItemSGEDoor.class, tileClass = TileSGEDoor.class)
+public class BlockSGEDoor extends SGEBlock {
 
 	private static final int blockCount = 2;
 
 	/** Default constructor */
-	public BlockLanteaDoor() {
+	public BlockSGEDoor() {
 		super(Material.ground);
 		setOpaque(false).setProvidesInventory(false).setProvidesTypes(true).setCanRotate(true);
 	}
@@ -62,7 +62,7 @@ public class BlockLanteaDoor extends SGEBlock {
 			float par9) {
 		if (world.isRemote)
 			return true;
-		TileLanteaDoor doorTile = (TileLanteaDoor) world.getTileEntity(x, y, z);
+		TileSGEDoor doorTile = (TileLanteaDoor) world.getTileEntity(x, y, z);
 		if (doorTile == null)
 			return true;
 		doorTile.openOrCloseDoor();
@@ -70,7 +70,7 @@ public class BlockLanteaDoor extends SGEBlock {
 	}
 
 	public Item getItemDropped(int metadata, Random random, int fortune) {
-		return LCRuntime.runtime.blocks().lanteaDoor.getItem();
+		return SGERuntime.runtime.blocks().SGEDoor.getItem();
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -102,7 +102,7 @@ public class BlockLanteaDoor extends SGEBlock {
 
 	@Override
 	public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-		TileLanteaDoor te = (TileLanteaDoor) world.getTileEntity(x, y, z);
+		TileSGEDoor te = (TileSGEDoor) world.getTileEntity(x, y, z);
 		if (te == null)
 			return;
 		setBlockBounds(te.getBoundingBox());
@@ -110,7 +110,7 @@ public class BlockLanteaDoor extends SGEBlock {
 
 	@Override
 	public AxisAlignedBB getSelectedBoundingBoxFromPool(World world, int x, int y, int z) {
-		TileLanteaDoor te = (TileLanteaDoor) world.getTileEntity(x, y, z);
+		TileSGEDoor te = (TileSGEDoor) world.getTileEntity(x, y, z);
 		if (te == null)
 			return AxisAlignedBB.getBoundingBox(0.0D, 0.0D, 0.0D, 0.0D, 0.0D, 0.0D);
 		AxisAlignedBB aabb = te.getBoundingBox();
@@ -121,7 +121,7 @@ public class BlockLanteaDoor extends SGEBlock {
 
 	@Override
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {
-		TileLanteaDoor te = (TileLanteaDoor) world.getTileEntity(x, y, z);
+		TileSGEDoor te = (TileLanteaDoor) world.getTileEntity(x, y, z);
 		if (te == null)
 			return null;
 		AxisAlignedBB aabb = te.getBoundingBox();
@@ -142,7 +142,7 @@ public class BlockLanteaDoor extends SGEBlock {
 	public void onNeighborBlockChange(World world, int x, int y, int z, Block b) {
 		if (!world.isRemote) {
 			int strength = world.getStrongestIndirectPower(x, y, z);
-			TileLanteaDoor te = (TileLanteaDoor) world.getTileEntity(x, y, z);
+			TileSGEDoor te = (TileSGEDoor) world.getTileEntity(x, y, z);
 			if (te != null)
 				te.setRedstoneState(strength);
 		}
