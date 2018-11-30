@@ -1,23 +1,23 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.init;
+package SGE.api.init;
 
-import lc.api.defs.IContainerDefinition;
+import SGE.api.defs.IContainerDefinition;
 
 /**
  * Block definition list.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class Blocks {
 
 	/** LanteaCraft global ore block */
-	public IContainerDefinition lanteaOreBlock;
+	public IContainerDefinition SGEOreBlock;
 	/** Alloy block */
-	public IContainerDefinition lanteaAlloyBlock;
+	public IContainerDefinition SGEAlloyBlock;
 
 	/** Stargate ring block */
 	public IContainerDefinition stargateRingBlock;
@@ -33,13 +33,13 @@ public class Blocks {
 	public IContainerDefinition frameBlock;
 
 	/** Decorative global block */
-	public IContainerDefinition lanteaDecorBlock;
+	public IContainerDefinition SGEDecorBlock;
 	/** Decorative glass global block */
-	public IContainerDefinition lanteaGlassBlock;
+	public IContainerDefinition SGEGlassBlock;
 	/** Decorative obelisk block */
-	public IContainerDefinition lanteaObelisk;
+	public IContainerDefinition SGEObelisk;
 	/** Decorative brazier block */
-	public IContainerDefinition lanteaBrazier;
+	public IContainerDefinition SGEBrazier;
 
 	/** Crystal infuser machine */
 	public IContainerDefinition machineCrystalInfuser;
@@ -49,6 +49,6 @@ public class Blocks {
 	public IContainerDefinition machineNaquadahGenerator;
 
 	/** Lantea global door item */
-	public IContainerDefinition lanteaDoor;
+	public IContainerDefinition SGEDoor;
 
 }
