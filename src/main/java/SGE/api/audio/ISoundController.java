@@ -1,17 +1,17 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.audio;
+package SGE.api.audio;
 
-import lc.api.audio.channel.IMixer;
-import lc.api.audio.streaming.ISoundPosition;
-import lc.api.audio.streaming.ISoundServer;
+import SGE.api.audio.channel.IMixer;
+import SGE.api.audio.streaming.ISoundPosition;
+import SGE.api.audio.streaming.ISoundServer;
 
 /**
  * Interface for sound controller systems at runtime.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface ISoundController {
