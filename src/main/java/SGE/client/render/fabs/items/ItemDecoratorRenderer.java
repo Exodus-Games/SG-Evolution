@@ -1,6 +1,6 @@
 package SGE.client.render.fabs.items;
 
-import SGE.common.base.LCItemRenderer;
+import SGE.common.base.SGEItemRenderer;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.util.data.ImmutablePair;
 import SGE.common.util.game.BlockHelper;
@@ -30,7 +30,7 @@ public class ItemDecoratorRenderer extends SGEItemRenderer {
 	}
 
 	@Override
-	public LCItemRenderer getParent() {
+	public SGEItemRenderer getParent() {
 		return null;
 	}
 
