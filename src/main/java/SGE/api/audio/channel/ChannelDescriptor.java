@@ -1,13 +1,13 @@
-package lc.api.audio.channel;
+package SGE.api.audio.channel;
 
-import lc.api.audio.streaming.ISoundProperties;
+import SGE.api.audio.streaming.ISoundProperties;
 
 /**
  * Represents an OpenAL channel descriptor for use in a Mixer; the descriptor
  * described the file, the name of the channel and the properties of the channel
  * for faster channel generation at runtime.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ChannelDescriptor {
