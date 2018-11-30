@@ -1,12 +1,12 @@
-package lc.api.components;
+package SGE.api.components;
 
-import lc.api.jit.AnyPredicate;
+import SGE.api.jit.AnyPredicate;
 
 /**
  * Interoperability registry interface. Stores all declared interoperability
  * provider at runtime.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IInteroperabilityRegistry {
