@@ -1,4 +1,4 @@
-package lc.common.base.generation.scattered;
+package SGE.common.base.generation.scattered;
 
 import java.util.Random;
 
@@ -9,13 +9,13 @@ import net.minecraft.world.gen.structure.StructureStart;
  * LanteaCraft scattered feature start. You should create and generate
  * components here.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public abstract class LCScatteredFeatureStart extends StructureStart {
+public abstract class SGEScatteredFeatureStart extends StructureStart {
 
 	/** Default constructor. */
-	public LCScatteredFeatureStart() {
+	public SGEScatteredFeatureStart() {
 
 	}
 
@@ -31,7 +31,7 @@ public abstract class LCScatteredFeatureStart extends StructureStart {
 	 * @param chunkZ
 	 *            The chunk z-coordinate
 	 */
-	public LCScatteredFeatureStart(World world, Random rng, int chunkX, int chunkZ) {
+	public SGEScatteredFeatureStart(World world, Random rng, int chunkX, int chunkZ) {
 		addComponents(world, rng, 16 * chunkX, 16 * chunkZ);
 		updateBoundingBox();
 	}
