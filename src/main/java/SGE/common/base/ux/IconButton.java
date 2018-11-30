@@ -1,6 +1,6 @@
-package lc.common.base.ux;
+package SGE.common.base.ux;
 
-import lc.common.resource.ResourceAccess;
+import SGE.common.resource.ResourceAccess;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.WorldRenderer;
@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.WorldRenderer;
 /**
  * IconButton element. TODO: Clean up, can extend GUIButton(?) instead.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class IconButton {
