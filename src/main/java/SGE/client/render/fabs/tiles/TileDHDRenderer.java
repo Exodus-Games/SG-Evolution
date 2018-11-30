@@ -4,9 +4,9 @@ import org.lwjgl.opengl.GL11;
 
 import SGE.api.stargate.StargateType;
 import SGE.client.models.ModelDHD;
-import SGE.common.base.LCTile;
-import SGE.common.base.LCTileRenderer;
-import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.base.SGETile;
+import SGE.common.base.SGETileRenderer;
+import SGE.common.base.pipeline.SGETileRenderPipeline;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.util.math.Orientations;
 import SGE.tiles.TileDHD;
@@ -20,7 +20,7 @@ public class TileDHDRenderer extends SGETileRenderer {
 		
 	}
 	@Override
-	public LCTileRenderer getParent() {
+	public SGETileRenderer getParent() {
 		return null;
 	}
 
