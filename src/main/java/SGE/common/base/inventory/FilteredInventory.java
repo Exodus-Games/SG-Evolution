@@ -1,12 +1,12 @@
-package lc.common.base.inventory;
+package SGE.common.base.inventory;
 
 import net.minecraft.item.ItemStack;
-import lc.common.util.game.SlotFilter;
+import SGE.common.util.game.SlotFilter;
 
 /**
  * Filtered simple inventory stub.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public abstract class FilteredInventory extends BasicInventory {
