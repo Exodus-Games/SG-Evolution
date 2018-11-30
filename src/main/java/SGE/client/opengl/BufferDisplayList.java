@@ -1,13 +1,13 @@
-package lc.client.opengl;
+package SGE.client.opengl;
 
-import lc.api.rendering.IGraphicsBuffer;
+import SGE.api.rendering.IGraphicsBuffer;
 
 import org.lwjgl.opengl.GL11;
 
 /**
  * OpenGL display list buffering mode.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class BufferDisplayList implements IGraphicsBuffer {
