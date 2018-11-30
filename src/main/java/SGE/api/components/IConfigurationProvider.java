@@ -1,9 +1,9 @@
-package lc.api.components;
+package SGE.api.components;
 
 /**
  * Contract interface for configuration providers.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IConfigurationProvider {
