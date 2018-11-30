@@ -2,7 +2,7 @@ package SGE.client.models;
 
 import SGE.api.stargate.StargateType;
 import SGE.client.models.loader.WavefrontModel;
-import SGE.common.LCLog;
+import SGE.common.SGELog;
 import SGE.common.resource.ResourceAccess;
 import net.minecraftforge.fml.client.FMLClientHandler;
 
