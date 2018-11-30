@@ -1,11 +1,11 @@
-package lc.api.event;
+package SGE.api.event;
 
 import net.minecraftforge.fml.relauncher.Side;
 
 /**
  * Tick event handler interface.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface ITickEventHandler {
