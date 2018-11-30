@@ -1,4 +1,4 @@
-package lc.common.base.ux;
+package SGE.common.base.ux;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,7 +16,7 @@ import net.minecraft.client.renderer.RenderHelper;
 /**
  * Popover GUI element
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class Popover {
@@ -55,7 +55,7 @@ public class Popover {
 	 *            The z-depth
 	 * @return The height of the popover
 	 */
-	public int render(Minecraft mc, LCContainerGUI gui, int x, int y, int width, float zLevel) {
+	public int render(Minecraft mc, SGEContainerGUI gui, int x, int y, int width, float zLevel) {
 		float remain = 1.0f;
 		if (age > 0.5f * expiry)
 			remain = Math.max(0.001f, (expiry - age) / (0.5f * (expiry + 1)));
@@ -97,7 +97,7 @@ public class Popover {
 	 *            The z-depth
 	 * @return The height used
 	 */
-	public static int drawPopover(Minecraft mc, LCContainerGUI gui, String text, int x, int y, float remain, int width,
+	public static int drawPopover(Minecraft mc, SGEContainerGUI gui, String text, int x, int y, float remain, int width,
 			float zLevel) {
 		GL11.glDisable(GL12.GL_RESCALE_NORMAL);
 		GL11.glEnable(GL11.GL_BLEND);
