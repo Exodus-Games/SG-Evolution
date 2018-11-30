@@ -3,9 +3,9 @@ package SGE.client.render.fabs.tiles;
 import org.lwjgl.opengl.GL11;
 
 import SGE.client.models.ModelLaptop;
-import SGE.common.base.LCTile;
-import SGE.common.base.LCTileRenderer;
-import SGE.common.base.pipeline.LCTileRenderPipeline;
+import SGE.common.base.SGETile;
+import SGE.common.base.SGETileRenderer;
+import SGE.common.base.pipeline.SGETileRenderPipeline;
 import SGE.common.configuration.xml.ComponentConfig;
 import SGE.common.resource.ResourceAccess;
 import SGE.common.util.math.Orientations;
