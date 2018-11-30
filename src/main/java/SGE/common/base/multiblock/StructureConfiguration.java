@@ -1,15 +1,15 @@
-package lc.common.base.multiblock;
+package SGE.common.base.multiblock;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import lc.common.LCLog;
-import lc.common.util.game.BlockFilter;
-import lc.common.util.math.Matrix3;
-import lc.common.util.math.Orientations;
-import lc.common.util.math.Vector3;
-import lc.common.util.math.VectorAABB;
+import SGE.common.SGELog;
+import SGE.common.util.game.BlockFilter;
+import SGE.common.util.math.Matrix3;
+import SGE.common.util.math.Orientations;
+import SGE.common.util.math.Vector3;
+import SGE.common.util.math.VectorAABB;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 /**
  * Represents a configuration setup for a particular multiblock structure.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public abstract class StructureConfiguration {
@@ -94,7 +94,7 @@ public abstract class StructureConfiguration {
 				if (!filter.matches(world, tile.rx(), tile.ry(), tile.rz()))
 					return false;
 			} catch (IndexOutOfBoundsException bounds) {
-				LCLog.fatal("Access out of bounds: " + bounds.getMessage() + ": "
+				SGELog.fatal("Access out of bounds: " + bounds.getMessage() + ": "
 						+ String.format("%s %s %s", mapping.rx(), mapping.ry(), mapping.rz()));
 				return false;
 			}
@@ -132,7 +132,7 @@ public abstract class StructureConfiguration {
 				if (cell == typeof)
 					vectors.add(tile);
 			} catch (IndexOutOfBoundsException bounds) {
-				LCLog.fatal("Access out of bounds: " + bounds.getMessage() + ": "
+				SGELog.fatal("Access out of bounds: " + bounds.getMessage() + ": "
 						+ String.format("%s %s %s", mapping.rx(), mapping.ry(), mapping.rz()));
 			}
 		}
@@ -167,8 +167,8 @@ public abstract class StructureConfiguration {
 			Vector3 tile = origin.add(rotation.mul(mapping));
 			try {
 				TileEntity wTile = world.getTileEntity(new BlockPos(tile.rx(), tile.ry(), tile.rz()));
-				if (wTile != null && wTile instanceof LCMultiblockTile) {
-					LCMultiblockTile multiTile = (LCMultiblockTile) wTile;
+				if (wTile != null && wTile instanceof SGEMultiblockTile) {
+					SGEMultiblockTile multiTile = (SGEMultiblockTile) wTile;
 					if (multiTile.isSlave())
 						multiTile.setOwner(ownerVec);
 				}
