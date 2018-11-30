@@ -1,11 +1,11 @@
-package lc.api.components;
+package SGE.api.components;
 
-import lc.api.defs.IInterfaceDefinition;
+import SGE.api.defs.IInterfaceDefinition;
 
 /**
  * Interface registry interface. Stores all declared interfaces at runtime.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IInterfaceRegistry {
