@@ -1,4 +1,4 @@
-package lc.common.base.ux;
+package SGE.common.base.ux;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -15,10 +15,10 @@ import org.lwjgl.opengl.GL11;
 
 import com.google.common.collect.Lists;
 
-import lc.api.stargate.StargateType;
-import lc.client.opengl.BufferTexture;
-import lc.common.LCLog;
-import lc.common.resource.ResourceAccess;
+import SGE.api.stargate.StargateType;
+import SGE.client.opengl.BufferTexture;
+import SGE.common.SGELog;
+import SGE.common.resource.ResourceAccess;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -33,13 +33,13 @@ import net.minecraft.util.StatCollector;
 /**
  * Internal base container GUI class.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public abstract class LCContainerGUI extends GuiContainer {
+public abstract class SGEContainerGUI extends GuiContainer {
 
 	private final static int defaultTextColor = 0x404040;
-	private LCContainerTab activeTab;
+	private SGEContainerTab activeTab;
 	private ArrayList<Popover> popovers;
 	private TileEntity tile;
 	private BufferTexture tabVboBuffer;
@@ -58,7 +58,7 @@ public abstract class LCContainerGUI extends GuiContainer {
 	 * @param container
 	 *            The parent container
 	 */
-	public LCContainerGUI(TileEntity tile, Container container) {
+	public SGEContainerGUI(TileEntity tile, Container container) {
 		super(container);
 		this.tile = tile;
 		tabVboBuffer = new BufferTexture(Minecraft.getMinecraft().displayWidth, Minecraft.getMinecraft().displayHeight);
@@ -172,7 +172,7 @@ public abstract class LCContainerGUI extends GuiContainer {
 		GL11.glDisable(GL11.GL_LIGHTING);
 		for (int i = 0; i < getTabs().size(); i++) {
 			int y = (i * 16);
-			LCContainerTab tab = getTabs().get(i);
+			SGEContainerTab tab = getTabs().get(i);
 			ResourceLocation ico = tab.getTabIcon();
 			if (ico != null) {
 				if (tab == activeTab)
@@ -188,7 +188,7 @@ public abstract class LCContainerGUI extends GuiContainer {
 					drawTooltip(tab.getTabName(), (int) (mouseX - stop - 2), mouseY - guiTop);
 				}
 			} else
-				LCLog.warn("Problem rendering tab %s: tab icon null!", tab.getClass().getName());
+				SGELog.warn("Problem rendering tab %s: tab icon null!", tab.getClass().getName());
 		}
 		GL11.glEnable(GL11.GL_LIGHTING);
 		GL11.glPopMatrix();
@@ -597,7 +597,7 @@ public abstract class LCContainerGUI extends GuiContainer {
 			destination.setContents(new StringSelection(what), null);
 			return true;
 		} catch (Throwable t) {
-			LCLog.warn("Can't write to clipboard.", t);
+			SGELog.warn("Can't write to clipboard.", t);
 			return false;
 		}
 	}
@@ -607,7 +607,7 @@ public abstract class LCContainerGUI extends GuiContainer {
 			Clipboard source = Toolkit.getDefaultToolkit().getSystemClipboard();
 			return (String) source.getData(DataFlavor.stringFlavor);
 		} catch (Throwable t) {
-			LCLog.warn("Can't read from clipboard.", t);
+			SGELog.warn("Can't read from clipboard.", t);
 			return null;
 		}
 	}
