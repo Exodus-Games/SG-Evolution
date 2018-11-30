@@ -1,4 +1,4 @@
-package lc.common.base.generation.structure;
+package SGE.common.base.generation.structure;
 
 import java.util.Random;
 
@@ -6,15 +6,15 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.StructureStart;
 
 /**
- * LanteaCraft structure generator feature start. You should create and generate
+ * SG Evolution structure generator feature start. You should create and generate
  * components here.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public abstract class LCFeatureStart extends StructureStart {
+public abstract class SGEFeatureStart extends StructureStart {
 	/** Default constructor */
-	public LCFeatureStart() {
+	public SGEFeatureStart() {
 	}
 
 	/**
@@ -29,7 +29,7 @@ public abstract class LCFeatureStart extends StructureStart {
 	 * @param chunkZ
 	 *            The chunk y-coordinate
 	 */
-	public LCFeatureStart(World world, Random rng, int chunkX, int chunkZ) {
+	public SGEFeatureStart(World world, Random rng, int chunkX, int chunkZ) {
 		addComponents(world, rng, 16 * chunkX, 16 * chunkZ);
 		updateBoundingBox();
 	}
