@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 import SGE.client.opengl.SGEEntityFX;
 import SGE.common.resource.ResourceAccess;
 
-public class GFXFlame extends LCEntityFX {
+public class GFXFlame extends SGEEntityFX {
 
 	public GFXFlame(World world, double x, double y, double z, float scale, float gravity, float drift) {
 		super(world, x, y, z, 0.0f, drift * world.rand.nextFloat(), 0.0f);
