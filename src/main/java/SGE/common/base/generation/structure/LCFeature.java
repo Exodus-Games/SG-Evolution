@@ -1,4 +1,4 @@
-package lc.common.base.generation.structure;
+package SGE.common.base.generation.structure;
 
 import java.util.Random;
 
@@ -8,13 +8,13 @@ import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraft.world.gen.structure.StructureComponent;
 
 /**
- * LanteaCraft feature stub class. Used for the creation of structures using
+ * SG Evolution feature stub class. Used for the creation of structures using
  * addComponentParts.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public abstract class LCFeature extends StructureComponent {
+public abstract class SGEFeature extends StructureComponent {
 	/** The size of the bounding box for this feature in the X axis */
 	protected int scatteredFeatureSizeX;
 	/** The size of the bounding box for this feature in the Y axis */
@@ -25,7 +25,7 @@ public abstract class LCFeature extends StructureComponent {
 	protected int hPos = -1;
 
 	/** Default constructor */
-	public LCFeature() {
+	public SGEFeature() {
 	}
 
 	/**
@@ -46,7 +46,7 @@ public abstract class LCFeature extends StructureComponent {
 	 * @param sz
 	 *            The size on the z-axis
 	 */
-	protected LCFeature(Random rng, int x, int y, int z, int sx, int sy, int sz) {
+	protected SGEFeature(Random rng, int x, int y, int z, int sx, int sy, int sz) {
 		super(0);
 		scatteredFeatureSizeX = sx;
 		scatteredFeatureSizeY = sy;
