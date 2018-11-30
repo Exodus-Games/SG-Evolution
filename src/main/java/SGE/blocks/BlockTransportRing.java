@@ -3,13 +3,13 @@ package SGE.blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
-import lc.api.components.ComponentType;
-import lc.api.defs.Definition;
-import lc.common.base.LCBlock;
-import lc.common.configuration.xml.ComponentConfig;
-import lc.common.resource.ResourceAccess;
-import lc.items.ItemBlockTransportRing;
-import lc.tiles.TileTransportRing;
+import SGE.api.components.ComponentType;
+import SGE.api.defs.Definition;
+import SGE.common.base.SGEBlock;
+import SGE.common.configuration.xml.ComponentConfig;
+import SGE.common.resource.ResourceAccess;
+import SGE.items.ItemBlockTransportRing;
+import SGE.tiles.TileTransportRing;
 
 /**
  * Transporter ring block implementation
