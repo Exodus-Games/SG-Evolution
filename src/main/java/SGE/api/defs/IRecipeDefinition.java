@@ -1,19 +1,19 @@
 /**
- * This file is part of the official LanteaCraft API. Please see the usage guide and
+ * This file is part of the official SG Evolution API. Please see the usage guide and
  * restrictions on use in the package-info file.
  */
-package lc.api.defs;
+package SGE.api.defs;
 
 import java.util.Map;
 
-import lc.api.components.RecipeType;
+import SGE.api.components.RecipeType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 
 /**
  * Recipe defintion container
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IRecipeDefinition extends IGameDef {
