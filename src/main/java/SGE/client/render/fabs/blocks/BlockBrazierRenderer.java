@@ -7,9 +7,9 @@ import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
-import lc.client.render.fabs.DefaultBlockRenderer;
-import lc.common.base.LCBlockRenderer;
-import lc.common.configuration.xml.ComponentConfig;
+import SGE.client.render.fabs.DefaultBlockRenderer;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.configuration.xml.ComponentConfig;
 
 /**
  * Brazier block renderer implementation
@@ -17,7 +17,7 @@ import lc.common.configuration.xml.ComponentConfig;
  * @author Exodus Games
  *
  */
-public class BlockBrazierRenderer extends LCBlockRenderer {
+public class BlockBrazierRenderer extends SGEBlockRenderer {
 
 	@Override
 	public void configure(ComponentConfig c) {
