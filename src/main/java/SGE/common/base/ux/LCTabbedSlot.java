@@ -1,13 +1,13 @@
-package lc.common.base.ux;
+package SGE.common.base.ux;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 
-public class LCTabbedSlot extends Slot {
+public class SGETabbedSlot extends Slot {
 	
 	private int posX, posY;
 
-	public LCTabbedSlot(IInventory inv, int idx, int x, int y) {
+	public SGETabbedSlot(IInventory inv, int idx, int x, int y) {
 		super(inv, idx, x, y);
 		this.posX = x;
 		this.posY = y;
