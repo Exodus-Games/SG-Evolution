@@ -1,4 +1,4 @@
-package lc.client.openal;
+package SGE.client.openal;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,20 +7,20 @@ import java.util.Map.Entry;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import cpw.mods.fml.relauncher.Side;
-import lc.LCRuntime;
-import lc.api.audio.ISoundController;
-import lc.api.audio.channel.IMixer;
-import lc.api.audio.streaming.ISoundPosition;
-import lc.api.audio.streaming.ISoundServer;
-import lc.api.event.ITickEventHandler;
-import lc.common.LCLog;
-import lc.common.util.java.DestructableReference;
-import lc.common.util.math.DimensionPos;
+import SGE.SGERuntime;
+import SGE.api.audio.ISoundController;
+import SGE.api.audio.channel.IMixer;
+import SGE.api.audio.streaming.ISoundPosition;
+import SGE.api.audio.streaming.ISoundServer;
+import SGE.api.event.ITickEventHandler;
+import SGE.common.SGELog;
+import SGE.common.util.java.DestructableReference;
+import SGE.common.util.math.DimensionPos;
 
 /**
  * Client sound controller implementation.
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class ClientSoundController implements ISoundController, ITickEventHandler {
@@ -31,7 +31,7 @@ public class ClientSoundController implements ISoundController, ITickEventHandle
 
 	/** Default constructor */
 	public ClientSoundController() {
-		LCRuntime.runtime.ticks().register(this);
+		SGERuntime.runtime.ticks().register(this);
 		this.server = new StreamingSoundServer();
 		this.liveMixers = new HashMap<DestructableReference<Object>, IMixer>();
 		this.server.initialize();
@@ -83,7 +83,7 @@ public class ClientSoundController implements ISoundController, ITickEventHandle
 				if (ref.get() != null) {
 					mixer.getValue().think();
 				} else {
-					LCLog.debug("Cleaning up orphaned sound mixer %s", mixer);
+					SGELog.debug("Cleaning up orphaned sound mixer %s", mixer);
 					mixer.getValue().shutdown(true);
 					iter.remove();
 				}
