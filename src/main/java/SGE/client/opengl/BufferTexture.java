@@ -1,8 +1,8 @@
-package lc.client.opengl;
+package SGE.client.opengl;
 
 import java.nio.ByteBuffer;
 
-import lc.api.rendering.IGraphicsBuffer;
+import SGE.api.rendering.IGraphicsBuffer;
 
 import org.lwjgl.opengl.ARBFramebufferObject;
 import org.lwjgl.opengl.EXTFramebufferObject;
@@ -11,7 +11,7 @@ import org.lwjgl.opengl.GL11;
 /**
  * OpenGL to texture buffering mode.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public class BufferTexture implements IGraphicsBuffer {
