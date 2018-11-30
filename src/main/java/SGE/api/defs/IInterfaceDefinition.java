@@ -1,9 +1,9 @@
-package lc.api.defs;
+package SGE.api.defs;
 
 /**
  * Game interface definition interface
  * 
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
 public interface IInterfaceDefinition extends IGameDef {
