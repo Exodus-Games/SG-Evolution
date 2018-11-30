@@ -1,12 +1,12 @@
-package lc.common.base.pipeline;
+package SGE.common.base.pipeline;
 
-import lc.LCRuntime;
-import lc.api.defs.ILanteaCraftRenderer;
-import lc.client.render.fabs.DefaultBlockRenderer;
-import lc.common.LCLog;
-import lc.common.base.LCBlockRenderer;
-import lc.common.impl.registry.DefinitionRegistry;
-import lc.common.impl.registry.DefinitionRegistry.RendererType;
+import SGE.SGERuntime;
+import SGE.api.defs.ISGEvolutionRenderer;
+import SGE.client.render.fabs.DefaultBlockRenderer;
+import SGE.common.SGELog;
+import SGE.common.base.SGEBlockRenderer;
+import SGE.common.impl.registry.DefinitionRegistry;
+import SGE.common.impl.registry.DefinitionRegistry.RendererType;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.world.IBlockAccess;
@@ -15,10 +15,10 @@ import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 /**
  * Block rendering hook.
  *
- * @author AfterLifeLochie
+ * @author Exodus Games
  *
  */
-public class LCBlockRenderPipeline implements ISimpleBlockRenderingHandler {
+public class SGEBlockRenderPipeline implements ISimpleBlockRenderingHandler {
 
 	private final int renderIdx;
 	private final DefinitionRegistry registry;
@@ -30,7 +30,7 @@ public class LCBlockRenderPipeline implements ISimpleBlockRenderingHandler {
 	 * @param renderIdx
 	 *            The renderer ID of this hook
 	 */
-	public LCBlockRenderPipeline(int renderIdx) {
+	public SGEBlockRenderPipeline(int renderIdx) {
 		this.renderIdx = renderIdx;
 		registry = (DefinitionRegistry) LCRuntime.runtime.registries().definitions();
 		defaultBlockRenderer = new DefaultBlockRenderer();
@@ -39,22 +39,22 @@ public class LCBlockRenderPipeline implements ISimpleBlockRenderingHandler {
 	@Override
 	public void renderInventoryBlock(Block block, int metadata, int modelId, RenderBlocks renderer) {
 		boolean flag = true;
-		ILanteaCraftRenderer worker = registry.getRendererFor(RendererType.BLOCK, block.getClass());
-		if (worker == null || !(worker instanceof LCBlockRenderer))
+		ISGEvolutionRenderer worker = registry.getRendererFor(RendererType.BLOCK, block.getClass());
+		if (worker == null || !(worker instanceof SGEBlockRenderer))
 			flag = false;
 		else
 			try {
-				LCBlockRenderer blockRenderer = (LCBlockRenderer) worker;
+				SGEBlockRenderer blockRenderer = (SGEBlockRenderer) worker;
 				while (blockRenderer != null && !blockRenderer.renderInventoryBlock(block, renderer, metadata)) {
 					worker = registry.getRenderer(RendererType.BLOCK, blockRenderer.getParent());
-					if (worker == null || !(worker instanceof LCBlockRenderer)) {
+					if (worker == null || !(worker instanceof SGEBlockRenderer)) {
 						flag = false;
 						break;
 					}
-					blockRenderer = (LCBlockRenderer) worker;
+					blockRenderer = (SGEBlockRenderer) worker;
 				}
 			} catch (Throwable t) {
-				LCLog.warn("Uncaught block rendering exception.", t);
+				SGELog.warn("Uncaught block rendering exception.", t);
 				flag = false;
 			}
 		if (!flag)
@@ -65,18 +65,18 @@ public class LCBlockRenderPipeline implements ISimpleBlockRenderingHandler {
 	public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId,
 			RenderBlocks renderer) {
 		boolean flag = true;
-		ILanteaCraftRenderer worker = registry.getRendererFor(RendererType.BLOCK, block.getClass());
-		if (worker == null || !(worker instanceof LCBlockRenderer))
+		ISGEvolutionRenderer worker = registry.getRendererFor(RendererType.BLOCK, block.getClass());
+		if (worker == null || !(worker instanceof SGEBlockRenderer))
 			flag = false;
 		else {
-			LCBlockRenderer blockRenderer = (LCBlockRenderer) worker;
+			SGEBlockRenderer blockRenderer = (SGEBlockRenderer) worker;
 			while (blockRenderer != null && !blockRenderer.renderWorldBlock(block, renderer, world, x, y, z)) {
 				worker = registry.getRenderer(RendererType.BLOCK, blockRenderer.getParent());
-				if (worker == null || !(worker instanceof LCBlockRenderer)) {
+				if (worker == null || !(worker instanceof SGEBlockRenderer)) {
 					flag = false;
 					break;
 				}
-				blockRenderer = (LCBlockRenderer) worker;
+				blockRenderer = (SGEBlockRenderer) worker;
 			}
 		}
 
